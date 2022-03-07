@@ -1,0 +1,18 @@
+{
+    "day1":{
+        "img":"",
+        "github":"",
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/rNYbWmO",
+        "title":"100 Days CSS",
+        "text":"An easy start into the challenge with a custom build number with gradient.",
+        "num":1
+    },
+    "day2":{
+        "img":"",
+        "github":"",
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/YzEMRPj",
+        "title":"Menu Icon",
+        "text":"Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher.",
+        "num":2
+    }
+}

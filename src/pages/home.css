@@ -1,0 +1,128 @@
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    align-items: center;
+    min-height: 80vh;
+    gap: 1em;
+}
+
+/* Izquierda */
+.home .izquierda{
+    word-spacing: .4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width:576px) {  
+    .home .izquierda{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:768px) {  
+    .home .izquierda{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:768px) {  
+    .home .izquierda{
+        order: 2;
+    }
+}
+@media screen and (min-width:1200px) {  
+    .home .izquierda{
+        font-size: 20px;
+    }
+}
+
+
+.home .h1{
+    color: var(--second-text-color);
+    font-weight: bolder;
+    font-size: .9em;
+    margin: 0;
+}
+
+.home .h2{
+    color: var(--primary-text-color-strong);
+    font-weight: bolder;
+    font-size: 3.5em;
+    margin-bottom:.5em;
+}
+
+.home .h2 .span{
+    color: var(--opacity-color);
+}
+
+.home .description{
+    color: var(--second-text-color);
+}
+
+.home .description .span{
+    color: var(--primary-text-color);
+    font-weight: bolder;
+}
+
+/* Derecha */
+
+.home .container-project{
+    position: relative;
+}
+
+@media screen and (max-width:576px) {  
+    .home .container-project{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:768px) {  
+    .home .container-project{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:1200px) {  
+    .home .container-project{
+        font-size: 20px;
+    }
+}
+
+.home .container-project .footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.home .container-project .container-button{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.home .container-project .container-button .span{
+    color: var(--second-text-color);
+}
+
+.home .container-project .button-change,
+.home .container-project .codePen,
+.home .container-project .reset{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: var(--color);
+    border: .3em solid var(--bg-color);
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    outline-color: var(--color);
+}
+
+.home .container-project .button-change:hover,
+.home .container-project .codePen:hover,
+.home .container-project .reset:hover{
+    background-color: var(--color);
+    color: var(--bg-color);
+}
