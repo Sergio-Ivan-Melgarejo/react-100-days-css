@@ -2,10 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 100px 0;
     align-items: center;
-    min-height: 80vh;
-    gap: 1em;
 }
 
 /* Izquierda */
@@ -37,30 +34,7 @@
     }
 }
 
-
-.home .h1{
-    color: var(--second-text-color);
-    font-weight: bolder;
-    font-size: .9em;
-    margin: 0;
-}
-
-.home .h2{
-    color: var(--primary-text-color-strong);
-    font-weight: bolder;
-    font-size: 3.5em;
-    margin-bottom:.5em;
-}
-
-.home .h2 .span{
-    color: var(--opacity-color);
-}
-
-.home .description{
-    color: var(--second-text-color);
-}
-
-.home .description .span{
+.home .text .span{
     color: var(--primary-text-color);
     font-weight: bolder;
 }
@@ -97,6 +71,10 @@
     display: flex;
     gap: .5em;
     align-items: center;
+}
+
+.home .container-project .button-change{
+    padding: .3em;
 }
 
 .home .container-project .container-button .span{

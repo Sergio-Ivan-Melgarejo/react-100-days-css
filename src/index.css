@@ -54,3 +54,45 @@ code {
   color: var(--button-text-color);
   background-color: var(--color);
 }
+
+.main-app{
+  min-height: 80vh;
+  padding: 100px 1em;
+}
+
+.title{
+  color: var(--second-text-color);
+  font-weight: bolder;
+  font-size: .9em;
+  margin: 0;
+}
+
+.h1{
+  font-size: 3em !important;
+  color: var(--primary-text-color-stron);
+  margin-bottom: 20px;
+}
+
+.color{
+  color: var(--opacity-color);
+}
+
+.text .color{
+    font-weight: bolder;
+    color: var(--opacity-color) !important;
+}
+
+.text .color:hover{
+  color: var(--color) !important;
+
+}
+
+.text{
+  color: var(--second-text-color);
+  margin-bottom: 20px;
+}
+
+
+/* @media screen and (min-width:) {
+  
+} */

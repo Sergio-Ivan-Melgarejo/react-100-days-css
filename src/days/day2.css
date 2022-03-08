@@ -1,18 +1,9 @@
 
 .day2 {
-    width: 25em;
-    height: 25em;
-    border-radius: 5px;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-    overflow: hidden;
     background: #3FAF82;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.day2 .button-day2 {
+.day2__button {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -21,9 +12,9 @@
     padding: 1em;
 }
 
-.day2 .line-1,
-.day2 .line-2,
-.day2 .line-3{
+.day2__line-1,
+.day2__line-2,
+.day2__line-3{
     width: 5em;
     height: .5em;
     background-color: #fff;
@@ -31,13 +22,13 @@
     box-shadow: 4px 5px 5px 0 rgba(0,0,0,0.2);
 }
 
-.day2.active .line-1{animation: day2-appear-liner-1 1s forwards}
-.day2.active .line-2{animation: day2-appear-liner-2 1s forwards}
-.day2.active .line-3{animation: day2-appear-liner-3 1s forwards}
+.active .day2__line-1{animation: day2-appear-liner-1 1s forwards}
+.active .day2__line-2{animation: day2-appear-liner-2 1s forwards}
+.active .day2__line-3{animation: day2-appear-liner-3 1s forwards}
 
-.day2 .no-animation .line-1,
-.day2 .no-animation .line-2,
-.day2 .no-animation .line-3{animation: none;}
+.no-animation .day2__line-1,
+.no-animation .day2__line-2,
+.no-animation .day2__line-3{animation: none;}
 
 @keyframes day2-appear-liner-1 {
     0%{transform: translateY(0) }
@@ -58,9 +49,9 @@
     100%{transform: translateY(-1.5em) rotate(135deg)}
 }
 
-.day2 .line-1{animation: day2-disappear-liner-1 1s forwards}
-.day2 .line-2{animation: day2-disappear-liner-2 1s forwards}
-.day2 .line-3{animation: day2-disappear-liner-3 1s forwards}
+.day2__line-1{animation: day2-disappear-liner-1 1s forwards}
+.day2__line-2{animation: day2-disappear-liner-2 1s forwards}
+.day2__line-3{animation: day2-disappear-liner-3 1s forwards}
 
 @keyframes day2-disappear-liner-1 {
     0%{transform: translateY(1.5em) rotate(45deg)}

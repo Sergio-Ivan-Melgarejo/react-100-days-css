@@ -5,11 +5,11 @@ const Day2 = () => {
     const [active, setActive] = useState(false);
     const [noAnimation, setNoAnimation] = useState(true);
     return (
-        <div className={active ? "day2 active" : "day2"} >
-            <button className={noAnimation ? 'button-day2 no-animation' : "button-day2"} onClick={()=>{setActive(!active);setNoAnimation(false)}}>
-                <div className='line-1'></div>
-                <div className='line-2'></div>
-                <div className='line-3'></div>
+        <div className={active ? "days day2 active" : "days day2"} >
+            <button className={noAnimation ? 'day2__button no-animation' : "day2__button"} onClick={()=>{setActive(!active);setNoAnimation(false)}}>
+                <div className='day2__line-1'></div>
+                <div className='day2__line-2'></div>
+                <div className='day2__line-3'></div>
             </button>
         </div>
     )

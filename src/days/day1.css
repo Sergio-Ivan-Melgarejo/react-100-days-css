@@ -1,22 +1,10 @@
 .day1 {
-    width: 25em;
-    height: 25em;
-    border-radius: 5px;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-    overflow: hidden;
-    background: #fff;
-    color: #333;
-    font-family: "Courier New", "Courier", sans-serif;
     background: linear-gradient(50deg, rgb(67, 56, 159) 0%, rgb(78, 198, 202) 100%);
-    color: #fff;
-
     --box-shadow:rgba(0, 0, 0, .2) 0 0 20px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #fff;
 }
 
-.day1 .center{
+.day1__center{
     font-weight: bolder;
     margin: 0;
     line-height: 3em;
@@ -26,15 +14,15 @@
     text-align: center;
 }
 
-.day1 .num-one{
+.day1__num-one{
     position: absolute;
     width: 1.5em;
     height: 6.5em;
-    transform: translate(-.5em,-7.5em);
+    transform: translate(-.4em,-7.5em);
     z-index: 1;
 }
 
-.day1 .num-one::after{
+.day1__num-one::after{
     content: "";
     position: absolute;
     background-color: #fff;
@@ -44,7 +32,7 @@
     box-shadow: var(--box-shadow);
 }
 
-.day1 .num-one::before{
+.day1__num-one::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -52,10 +40,10 @@
     background-color: #eee;
     box-shadow: var(--box-shadow);
     border-radius: 5px;
-    transform: rotate(55deg) translate(-0.6em, 1em);
+    transform: rotate(55deg) translate(-0.68em, 1em);
 }
 
-.day1 .num-zero{
+.day1__num-zero{
     height: 3.5em;
     width: 3.5em;
     position: absolute;
@@ -66,16 +54,16 @@
     box-shadow: var(--box-shadow);
 }
 
-.day1 .num-zero:nth-child(2){
+.day1__num-zero:nth-child(2){
     transform: translate(6.8em,-7.5em);
 }
 
-.day1 .text1{
+.day1__text1{
     display: block;
-    font-size: 5.5em;
+    font-size: 5em;
 }
 
-.day1 .text2{
+.day1__text2{
     display: block;
     font-size: 1.6em;
 }

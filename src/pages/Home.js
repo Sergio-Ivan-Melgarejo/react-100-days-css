@@ -9,11 +9,11 @@ const dataDays = () =>{}
 
 const Home = () => {
   return (
-    <header className='home text-center text-md-start'>
+    <header className='main-app home text-center text-md-start'>
         <div className='izquierda col-12 col-md-6'>
-          <h1 className='h1'>100 DAYS CSS CHALLENGE</h1>
-          <h2 className='h2'>Day <span className='span'>#1</span></h2>
-          <p className='description'>
+          <h1 className='title'>100 DAYS CSS CHALLENGE</h1>
+          <h2 className='h1'>Day <span className='color'>#1</span></h2>
+          <p className='text'>
             <span className='span'>100 Days CSS: </span>
             An easy start into the challenge with a custom build number with gradient.
           </p>

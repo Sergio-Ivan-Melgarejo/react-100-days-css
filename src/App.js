@@ -6,6 +6,7 @@ import 'bootstrap';
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Join from "./pages/Join";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/abaout/" element={<About />} />
-              <Route path="/how-to/" element={<h2>/how-to/</h2>} />
+              <Route path="/how-to/" element={<Join />} />
               <Route path="/leaderboard/" element={<h2>/leaderboard/</h2>} />
               <Route path="/progress/" element={<h2>/progress/</h2>} />
           </Routes>

@@ -1,3 +1,7 @@
+.navbar {
+    word-spacing: .3em;
+}
+
 .navbar .nav_link{
     padding: 5px 0;
     color: var(--second-text-color);
