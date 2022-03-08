@@ -1,0 +1,67 @@
+.about .section{
+    display: flex;
+    justify-content: space-evenly;
+    word-spacing: .3em;
+    margin: 100px 0;
+    padding: 1em;
+    gap: 1em;
+}
+
+.about .title{
+    font-size: 1em;
+    color: var(--second-text-color);
+    margin: 0;
+}
+
+.about .h1{
+    font-size: 4em;
+    color: var(--primary-text-color-stron);
+    margin-bottom: 20px;
+}
+
+.about .color{
+    color: var(--opacity-color);
+}
+
+.about .color:nth-child(1){
+    font-weight: bolder;
+}
+
+.about .text{
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+}
+
+/* Derecha */
+
+.about .derecha{
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .code-container{
+    border-radius: 15px;
+    width: 25em;
+    height: 20em;
+    overflow: hidden;
+    background-color: var(--primary-text-color-strong);
+}
+
+.about .code-container .top{
+    height: 20%;
+    border-bottom: 1px solid var(--second-text-color);
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: 1em;   
+}
+
+.about .code-container .circle{
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: .2em solid var(--opacity-color);
+    border-radius: 50%;
+}

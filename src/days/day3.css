@@ -1,0 +1,23 @@
+.day3 {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px; */
+    width: 25em;
+    height: 25em;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+    background: #272C34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}

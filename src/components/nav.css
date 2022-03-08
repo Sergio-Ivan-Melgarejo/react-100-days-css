@@ -1,3 +1,18 @@
+.navbar .nav_link{
+    padding: 5px 0;
+    color: var(--second-text-color);
+    margin-right: 25px;
+}
+
+.navbar .nav_link:hover{
+    color: var(--primary-text-color-strong);
+}
+
+.navbar .nav_link.active{
+    color: var(--opacity-color);
+    border-bottom: 2px solid var(--opacity-color);
+}
+
 .navbar .button{
     display: flex;
     justify-content: space-between;

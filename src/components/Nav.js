@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import "./nav.css"
 
 const Nav = () => {
@@ -10,37 +11,36 @@ const Nav = () => {
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span> 
-                        
                     </button>
 
-                    <a className="button d-md-none" href="#">What is this?</a>
+                    <NavLink className="button d-md-none" to="/abaout/">What is this?</NavLink>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">The Challenge</a>
+                                <NavLink className="nav_link" activeClassName="active" to="/">The Challenge</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">What is this?</a>
+                                <NavLink className="nav_link" activeClassName="active" to="/abaout/">What is this?</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">How can I join?</a>
+                                <NavLink className="nav_link" activeClassName="active" to="/how-to/">How can I join?</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Leaderboard</a>
+                                <NavLink className="nav_link" activeClassName="active" to="/leaderboard/">Leaderboard</NavLink>
                             </li>
                         </ul>
 
                         <form className="d-flex d-none d-lg-block">
-                            <a href="#" className="button" type="submit">
+                            <NavLink to="/progress/" className="button">
                                 <span className='span'>Check Progress</span>
                                 <div className='effect'>
                                     <span className='bar'></span>
                                     <span className='bar'></span>
                                     <span className='bar'></span>
                                 </div>
-                            </a>
+                            </NavLink>
                         </form>
 
                     </div>
