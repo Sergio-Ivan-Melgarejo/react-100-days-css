@@ -1,0 +1,16 @@
+.progres-days{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .1em;
+    padding: 1em;
+}
+
+.progres-days .day{
+    text-align: center;
+    color: var(--bg-color);
+    background-color: var(--second-text-color);
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    border-radius: 2px;
+}

@@ -18,23 +18,23 @@ const Nav = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
+                            <li className="nav-item my-2 ms-4">
                                 <NavLink className="nav_link" activeClassName="active" to="/">The Challenge</NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item my-2 ms-4">
                                 <NavLink className="nav_link" activeClassName="active" to="/abaout/">What is this?</NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item my-2 ms-4">
                                 <NavLink className="nav_link" activeClassName="active" to="/how-to/">How can I join?</NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item my-2 ms-4">
                                 <NavLink className="nav_link" activeClassName="active" to="/leaderboard/">Leaderboard</NavLink>
                             </li>
                         </ul>
 
                         <form className="d-flex d-none d-lg-block">
-                            <NavLink to="/progress/" className="button">
-                                <span className='span'>Check Progress</span>
+                            <NavLink activeClassName="active-progress" to="/progress/" className="button">
+                                <span className='span'>Check My Progress</span>
                                 <div className='effect'>
                                     <span className='bar'></span>
                                     <span className='bar'></span>

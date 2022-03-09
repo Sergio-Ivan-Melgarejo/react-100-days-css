@@ -3,9 +3,9 @@ import "./about.css"
 
 const About = () => {
   return (
-    <div className='main-app about'>
-        <section className='section row'>
-            <div className='izquierda col-12 col-lg-6'>
+    <div className='main-app about row'>
+        <section className='section col-12 row m-auto'>
+            <div className='izquierda col-12 col-sm-10 col-md-8 col-lg-6 m-auto'>
                 <h1 className='title fw-bolder'>100 DAYS CSS CHALLENGE</h1>
                 <h2 className='h1'>what is <span className='color'>this?</span></h2>
                 <p className='text'>For 100 consecutive days, I've written HTML and CSS snippets as a creative learning process for myself.</p>

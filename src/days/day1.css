@@ -1,6 +1,6 @@
 .day1 {
     background: linear-gradient(50deg, rgb(67, 56, 159) 0%, rgb(78, 198, 202) 100%);
-    --box-shadow:rgba(0, 0, 0, .2) 0 0 20px 5px;
+    --box-shadow:rgba(0, 0, 0, .2) 0 0 1.2em .4em;
     color: #fff;
 }
 

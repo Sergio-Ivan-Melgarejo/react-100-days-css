@@ -5,7 +5,6 @@
 .navbar .nav_link{
     padding: 5px 0;
     color: var(--second-text-color);
-    margin-right: 25px;
 }
 
 .navbar .nav_link:hover{

@@ -1,0 +1,20 @@
+.myProgress .section:nth-child(1){
+    max-width: 600px;
+}
+
+@media screen and (max-width:576px) {  
+    .myProgress .container-buttons .button-outline-secondary,
+    .myProgress .container-buttons .button{
+    width: 100%;
+}
+}
+
+.myProgress .container-item{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+}
+
+.myProgress .container-item svg{
+    width: 100%;
+}

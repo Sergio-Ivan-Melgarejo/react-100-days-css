@@ -19,7 +19,7 @@
 }
 
 *,*::after,*::before{
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 a{
@@ -40,14 +40,18 @@ code {
     monospace;
 }
 
+.button-outline-secondary,
 .button{
   display: block;
+  border: 3px solid var(--bg-color);
+  padding: .5em 2em;
+  border-radius: 10px;
+}
+
+.button{
   color: var(--button-text-color);
   background-color: var(--opacity-color);
   outline-color: var(--color);
-  border: 3px solid var(--bg-color);
-  padding: 10px 20px;
-  border-radius: 10px;
 }
 
 .button:hover{
@@ -55,9 +59,22 @@ code {
   background-color: var(--color);
 }
 
+.button-outline-secondary{
+  color: var(--bg-color);
+  background-color: var(--primary-text-color);
+  outline-color: var(--primary-text-color);
+}
+
+.button-outline-secondary:hover{
+  color: var(--bg-color);
+  background-color: var(--primary-text-color-strong);
+  outline-color: var(--primary-text-color-strong);
+}
+
 .main-app{
   min-height: 80vh;
-  padding: 100px 1em;
+  padding: 0 1em;
+  word-spacing: .4em;
 }
 
 .title{
@@ -84,7 +101,6 @@ code {
 
 .text .color:hover{
   color: var(--color) !important;
-
 }
 
 .text{
@@ -92,7 +108,22 @@ code {
   margin-bottom: 20px;
 }
 
+.section{
+  padding: 100px 0;
+}
 
-/* @media screen and (min-width:) {
-  
-} */
+@media screen and (max-width:576px) {  
+  .App{
+      font-size: 14px;
+  }
+}
+@media screen and (min-width:768px) {  
+  .App{
+      font-size: 16px;
+  }
+}
+@media screen and (min-width:1200px) {  
+  .App{
+      font-size: 20px;
+  }
+}

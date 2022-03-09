@@ -1,9 +1,12 @@
 import React from 'react'
 import "./home.css"
+import { Link } from 'react-router-dom'
+
 import Day1 from "../days/Day1"
 import Day2 from "../days/Day2"
 import Day3 from '../days/Day3'
-import { Link } from 'react-router-dom'
+import Day4 from '../days/Day4'
+
 
 const dataDays = () =>{}
 
@@ -19,7 +22,7 @@ const Home = () => {
           </p>
         </div>
         <div className='container-project'>
-          <Day3 />
+          <Day4 />
           <div className='footer'>
             <div className="container-button">
               <Link to={"/day-1"} className="button-change">

@@ -19,7 +19,7 @@
     height: .5em;
     background-color: #fff;
     border-radius: 3px;
-    box-shadow: 4px 5px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 .8em rgba(0,0,0,.4);
 }
 
 .active .day2__line-1{animation: day2-appear-liner-1 1s forwards}
