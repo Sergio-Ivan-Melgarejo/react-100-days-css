@@ -19,21 +19,21 @@ const Nav = () => {
                         
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item my-2 ms-4">
-                                <NavLink className="nav_link" activeClassName="active" to="/">The Challenge</NavLink>
+                                <NavLink className={({isActive})=>(isActive ? "nav_link active" : "nav_link")} to="/">The Challenge</NavLink>
                             </li>
                             <li className="nav-item my-2 ms-4">
-                                <NavLink className="nav_link" activeClassName="active" to="/abaout/">What is this?</NavLink>
+                                <NavLink className={({isActive})=>(isActive ? "nav_link active" : "nav_link")} to="/abaout/">What is this?</NavLink>
                             </li>
                             <li className="nav-item my-2 ms-4">
-                                <NavLink className="nav_link" activeClassName="active" to="/how-to/">How can I join?</NavLink>
+                                <NavLink className={({isActive})=>(isActive ? "nav_link active" : "nav_link")} to="/how-to/">How can I join?</NavLink>
                             </li>
                             <li className="nav-item my-2 ms-4">
-                                <NavLink className="nav_link" activeClassName="active" to="/leaderboard/">Leaderboard</NavLink>
+                                <NavLink className={({isActive})=>(isActive ? "nav_link active" : "nav_link")} to="/leaderboard/">Leaderboard</NavLink>
                             </li>
                         </ul>
 
                         <form className="d-flex d-none d-lg-block">
-                            <NavLink activeClassName="active-progress" to="/progress/" className="button">
+                            <NavLink className={({isActive})=>(isActive ? "button active-progress" : "button")} to="/progress/">
                                 <span className='span'>Check My Progress</span>
                                 <div className='effect'>
                                     <span className='bar'></span>
