@@ -103,9 +103,9 @@
     width: 100%;
     top: 0;
     left: 0;
-    clip-path: 
+    /* clip-path: 
     polygon(4% 46%, 20% 82%, 36% 75%, 52% 88%, 67% 52%, 81% 44%, 96% 46%,
-     96% 49%, 81% 47%, 67% 55%, 52% 91%, 36% 78%, 20% 85%, 4% 49%); 
+     96% 49%, 81% 47%, 67% 55%, 52% 91%, 36% 78%, 20% 85%, 4% 49%);  */
      transform: rotateX(180deg);
      transition: clip-path 1s ease;
 }
@@ -176,9 +176,9 @@
 .day5__circle-red.day5__thu{left: 51%;bottom: 87%;}
 .day5__circle-red.day5__fri{left: 66%;bottom: 51%;}
 .day5__circle-red.day5__sat{left: 80%;bottom: 43%;}
-.day5__circle-red.day5__sun{left: 95%;bottom: 45%;} */
+.day5__circle-red.day5__sun{left: 95%;bottom: 45%;}
 
-/* .day5__circle-blue.day5__mon{left: 3%;bottom: 26%;}
+.day5__circle-blue.day5__mon{left: 3%;bottom: 26%;}
 .day5__circle-blue.day5__tue{left: 19%;bottom: 41%;}
 .day5__circle-blue.day5__wed{left: 35%;bottom: 22%;}
 .day5__circle-blue.day5__thu{left: 51%;bottom: 36%;}

@@ -7,6 +7,7 @@ import Day2 from "../days/Day2"
 import Day3 from '../days/Day3'
 import Day4 from '../days/Day4'
 import Day5 from '../days/Day5'
+import Day6 from '../days/Day6'
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
           </p>
         </div>
         <div className='container-project'>
-          <Day5 />
+          <Day6 />
           <div className='footer'>
             <div className="container-button">
               <Link to={"/day-1"} className="button-change">
