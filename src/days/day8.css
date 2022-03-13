@@ -1,0 +1,89 @@
+.day8{
+    background-color: #000;
+    filter: contrast(15);
+}
+
+.day8__circle{
+    background-color: #fff;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    animation: day8-rotate 10s infinite linear;
+    position: relative;
+
+	filter: blur(5px);
+}
+
+@keyframes day8-rotate {
+    0%{}
+    100%{transform: rotate(360deg)}
+}
+
+.day8__little-circle{
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: -1em;
+    height: -1em;
+	filter: blur(5px);
+}
+
+.day8__little-circle:nth-child(1){
+    left: 0;
+    height: 0;
+    width: 6em;
+    height: 6em;
+    transform-origin: 3em 4em;
+    animation: day8-rotate 10s infinite linear;
+}
+
+.day8__little-circle:nth-child(2){
+    left: 0;
+    height: 0;
+    width: 5em;
+    height: 5em;
+    transform-origin: 2.5em 3em;
+    animation: day8-rotate 10s infinite linear reverse;
+}
+
+.day8__little-circle:nth-child(3){
+    width: 1.6em;
+    height: 1.6em;
+    transform-origin: -2em 4em;
+    animation: day8-rotate 10s infinite linear;
+}
+
+.day8__little-circle:nth-child(4){
+    width: 1.5em;
+    height: 1.5em;
+    transform-origin: 5em 5em;
+    animation: day8-rotate 4s infinite linear reverse;
+}
+
+.day8__little-circle:nth-child(5){
+    width: 1.4em;
+    height: 1.4em;
+    transform-origin: 7em 2em;
+    animation: day8-rotate 7s infinite linear;
+}
+
+.day8__little-circle:nth-child(6){
+    width: 1.3em;
+    height: 1.3em;
+    transform-origin: 3em 6em;
+    animation: day8-rotate 5s infinite linear reverse;
+}
+
+.day8__little-circle:nth-child(7){
+    width: 1.2em;
+    height: 1.2em;
+    transform-origin: 7em -1em;
+    animation: day8-rotate 4s infinite linear;
+}
+
+.day8__little-circle:nth-child(8){
+    width: 1.1em;
+    height: 1.1em;
+    transform-origin: 2em 7em;
+    animation: day8-rotate 4s infinite linear reverse;
+}
