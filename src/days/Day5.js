@@ -5,76 +5,29 @@ import "./day5.css"
 const Day5 = () => {
     const [data, setData] = useState({
         views:{  
-            mon:458,
-            tue:812,
-            wed:746,
-            thu:887,
-            fri:517,
-            sat:434,
-            sun:"8.9"
+            mon:"458",
+            tue:"812",
+            wed:"746",
+            thu:"887",
+            fri:"517",
+            sat:"434",
+            sun:"756"
         },
         purchases:{  
-            mon:26,
-            tue:41,
-            wed:22,
-            thu:36,
-            fri:25,
-            sat:13,
-            sun:"5.55"
+            mon:"26",
+            tue:"41",
+            wed:"22",
+            thu:"36",
+            fri:"25",
+            sat:"13",
+            sun:"20"
         }
     })
 
-    const [copyData, setCopyData] = useState()
-    
+    // tenerlo en string para quitar los dos primeros numeros
+    // pasar a number antes de poner
 
-    useEffect(() => {
-        const insetData = {};
-        const {views,purchases} = data;
-
-        
-        if(views){
-            let {mon} = views;
-            insetData.views = {
-                views:{  
-                    mon:mon,
-                    tue:812,
-                    wed:746,
-                    thu:887,
-                    fri:517,
-                    sat:434,
-                    sun:"8.9"
-                }
-            }
-        }
-        if(purchases){
-            let {mon} = purchases;
-            insetData.views = {
-                purchases:{  
-                    mon:mon,
-                    tue:812,
-                    wed:746,
-                    thu:887,
-                    fri:517,
-                    sat:434,
-                    sun:"8.9"
-                }
-            }
-        }
-
-        setCopyData(insetData)
-    }, [data])
-    
-
-    console.log(Math.round(data.views.tue))
-    let Rmon = Math.random(data.views.mon),
-        Rtue = Math.random(data.views.mon),
-        Rwed = Math.random(data.views.mon),
-        Rthu = Math.random(data.views.mon),
-        Rfri = Math.random(data.views.mon),
-        Rsat = Math.random(data.views.mon),
-        Rsun = data.views.sun;
-        console.log(data.views.sun,data.views.sun.length,data.views.sun.length <= 1 ? "0" + data.views.sun : data.views.sun[0] + data.views.sun[1] )
-
+    console.log("1".slice(0.2))
     return (
         <div className="days day5">
             <main className="day5__card">
@@ -91,15 +44,15 @@ const Day5 = () => {
                     </div>
                     <div className='day5__center'>
                         <div className='day5__bar-red'
-                        style={{clipPath: `polygon(4% ${Rmon + 1}%, 20% ${Rtue + 1}%, 36% ${Rwed + 1}%, 52% ${Rthu + 1}%, 67% ${Rfri + 1}%, 81% ${Rsat + 1}%, 96% ${Rsun + 1}%, 96% ${Rsun + 4}%, 81% ${Rsat + 4}%, 67% ${Rfri + 4}%, 52% ${Rthu + 4}%, 36% ${Rwed + 4}%, 20% ${Rtue + 4}%, 4% ${Rmon + 4}%)`}}
+                        style={{clipPath: `polygon(4% ${data.views.mon + 1}%, 20% ${data.views.tue + 1}%, 36% ${data.views.wed + 1}%, 52% ${data.views.thu + 1}%, 67% ${data.views.fri + 1}%, 81% ${data.views.sat + 1}%, 96% ${data.views.sun + 1}%, 96% ${data.views.sun + 4}%, 81% ${data.views.sat + 4}%, 67% ${data.views.fri + 4}%, 52% ${data.views.thu + 4}%, 36% ${data.views.wed + 4}%, 20% ${data.views.tue + 4}%, 4% ${data.views.mon + 4}%)`}}
                         ></div>
                         <div className='day5__bar-blue' 
-                        style={{clipPath: `polygon(4% ${Math.round(data.purchases.mon + 1)}%, 20% ${Math.round(data.purchases.tue + 1)}%, 36% ${Math.round(data.purchases.wed + 1)}%, 52% ${Math.round(data.purchases.thu + 1)}%, 67% ${Math.round(data.purchases.fri + 1)}%, 81% ${Math.round(data.purchases.sat + 1)}%, 96% ${Math.round(data.purchases.sun + 1)}%, 96% ${Math.round(data.purchases.sun + 4)}%, 81% ${Math.round(data.purchases.sat + 4)}%, 67% ${Math.round(data.purchases.fri + 4)}%, 52% ${Math.round(data.purchases.thu + 4)}%, 36% ${Math.round(data.purchases.wed + 4)}%, 20% ${Math.round(data.purchases.tue + 4)}%, 4% ${Math.round(data.purchases.mon + 4)}%)`}}></div>
+                        style={{clipPath: `polygon(4% ${data.purchases.mon + 1}%, 20% ${data.purchases.tue + 1}%, 36% ${data.purchases.wed + 1}%, 52% ${data.purchases.thu + 1}%, 67% ${data.purchases.fri + 1}%, 81% ${data.purchases.sat + 1}%, 96% ${data.purchases.sun + 1}%, 96% ${data.purchases.sun + 4}%, 81% ${data.purchases.sat + 4}%, 67% ${data.purchases.fri + 4}%, 52% ${data.purchases.thu + 4}%, 36% ${data.purchases.wed + 4}%, 20% ${data.purchases.tue + 4}%, 4% ${data.purchases.mon + 4}%)`}}></div>
                         <div className='day5__circle-red day5__mon' style={{left: "3%",bottom:`${data.views.mon}%`}}>
                             <span className='day5__number-red'>{data.views.mon}</span>
                         </div>
-                        <div className='day5__circle-red day5__tue' style={{left: "19%",bottom:`${Math.round(data.views.tue)}%`}}>
-                            <span className='day5__number-red'>{data.views.tue}</span>
+                        <div className='day5__circle-red day5__tue' style={{left: "19%",bottom:`${data.views.tue}%`}}>
+                           <span className='day5__number-red'>{data.views.tue}</span>
                         </div>
                         <div className='day5__circle-red day5__wed' style={{left: "35%",bottom:`${data.views.wed}%`}}>
                             <span className='day5__number-red'>{data.views.wed}</span>
