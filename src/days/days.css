@@ -2,7 +2,7 @@
     width: 25em;
     height: 25em;
     border-radius: 5px;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    box-shadow: .333em .5em 1em 0 rgba(0,0,0,0.1);
     overflow: hidden;
 
     display: flex;

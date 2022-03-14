@@ -31,8 +31,8 @@
 .day7__button{
     background-color: transparent;
     position: relative;
-    width: 3em;
-    height: 1.6em;
+    width: 2.5em;
+    height: 1.5em;
     opacity: .7;
     border: none;
     transition: opacity .5s ease;
@@ -45,7 +45,7 @@
 .day7__line-1,
 .day7__line-2{
     background-color: #fff;
-    height: .3em;
+    height: .25em;
     position: absolute;
     border-radius: .4em;
     left: .2em;
@@ -53,22 +53,22 @@
 
 .day7__line-1{
     top: .25em;
-    width: 1.8em;
+    width: 1.2em;
 }
 .day7__line-2{
-    width: 2.5em;
+    width: 2em;
     bottom: .25em;
 }
 
 .day7__circle{
-    width: .8em;
-    height: .8em;
+    width: .7em;
+    height: .7em;
     border-radius: 50%;
     border: #5F98CD .1em solid;
     background-color: #fff;
     position: absolute;
     top: 0em;
-    right: .2em;
+    right: .3em;
 }
 
 .day7__title{
@@ -76,17 +76,16 @@
     padding: 0 0em;
 }
 
-.day7__squares{
-    width: .8em;
-    height: 1em;
-    border: .1em #fff solid;
+.day7__icon{
+    font-size: 1em;
     opacity: .7;
     cursor: pointer;
     transition: opacity .5s ease;
-    margin: 0 1em;
+    margin: 0 .5em;
+    color: #fff;
 }
 
-.day7__squares:hover{
+.day7__icon:hover{
     opacity: 1;
 }
 
@@ -130,6 +129,23 @@
     position: relative;
     cursor: pointer;
     max-width: 18em;
+    visibility: none;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: day7-appear 1s ease forwards;
+}
+
+.day7__notification:nth-child(2){animation-delay: .3s}
+.day7__notification:nth-child(3){animation-delay: .6s}
+.day7__notification:nth-child(4){animation-delay: .9s}
+
+@keyframes day7-appear {
+    0%{}
+    100%{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .day7__date{
