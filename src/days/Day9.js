@@ -15,6 +15,9 @@ const Day9 = () => {
         <div className="day9__rain"></div>
         <div className="day9__rain"></div>
         <div className="day9__rain"></div>
+        <div className="day9__rain"></div>
+        <div className="day9__rain"></div>
+        <div className="day9__rain"></div>
 
         <div className="day9__moon">
             <div className="day9__crater"></div>

@@ -1,0 +1,86 @@
+.day10{
+    background: #4C4C4C;
+    color: #fff;
+	text-transform: uppercase;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.day10__circle{
+	background: #242424;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0em #3A3A3A;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 0em #3A3A3A;
+}
+.day10.active .day10__circle{animation: day10-loaded 2s linear infinite;}
+
+@keyframes day10-loaded{
+    50%{
+        box-shadow: 0 0 0 .5em #3A3A3A;
+    }
+	100%{
+	}
+}
+
+.day10__svg{
+    position: absolute;
+    width: 16.8em;
+    height: 16.8em;
+    top: -.9em;
+    left: -.9em;
+    transform: rotate(-90deg);
+}
+
+.day10.active .day10__loaded{
+    animation: day10-dash 2s linear infinite;
+}
+
+@keyframes day10-dash{
+	100%{
+		stroke-dashoffset:-565;
+	}
+}
+
+.day10__container{
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    transform: translate(0,5%);
+}
+
+
+.day10__first-line,
+.day10__third-line{
+    font-size: .7em;
+    line-height: 1em;
+    word-spacing: .1em;
+    
+}
+
+.day10__second-line{
+    font-size: 2.2em;
+    font-weight: bolder;
+    margin: .2em 0;
+}
+
+.day10__third-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.day10__heart{
+    color: #F85B5B;
+    margin-right: .4em;
+}
+.day10.active .day10__heart{animation: day10-heart 1.5s infinite ease-in;}
+
+@keyframes day10-heart {
+    50%{transform: scale(.8);}
+    100%{transform: scale(1);}
+}

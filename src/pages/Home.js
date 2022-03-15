@@ -11,6 +11,7 @@ import Day6 from '../days/Day6'
 import Day7 from '../days/Day7'
 import Day8 from '../days/Day8'
 import Day9 from '../days/Day9'
+import Day10 from '../days/Day10'
 
 const Home = () => {
   return (
