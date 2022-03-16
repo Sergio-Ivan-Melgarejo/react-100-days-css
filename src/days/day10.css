@@ -42,9 +42,12 @@
 }
 
 @keyframes day10-dash{
-	100%{
-		stroke-dashoffset:-565;
-	}
+    50%{
+        stroke-dashoffset:-565;
+    }
+    100%{
+        stroke-dashoffset:-1130;
+    }
 }
 
 .day10__container{
