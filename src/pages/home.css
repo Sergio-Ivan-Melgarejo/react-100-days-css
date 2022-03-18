@@ -26,8 +26,9 @@
 /* Derecha */
 
 .home .container-project{
+    width: auto;
     position: relative;
-    font-size: 30px !important;
+    /* font-size: 30px !important; */
 }
 
 @media screen and (max-width:576px) {  

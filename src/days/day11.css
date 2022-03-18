@@ -1,13 +1,14 @@
 .day11{
     background: radial-gradient(#f6e8d7 0%, #dabe9b 100%);
+    position: relative;
 }
 
 .day11__floor{
     position: absolute;
-    bottom: 0;
+    bottom: 0em;
     left: 0;
     width: 100%;
-    height: 12em;
+    height: 10em;
     background-color: #242424;
 }
 
@@ -19,16 +20,17 @@
     width: 5em;
     height: 1em;
     background-color: #fff;
-    animation: day11-line 4s infinite linear;
+    animation: day11-line 3s infinite linear;
     animation-delay: 1s;
+    visibility: hidden;
 }
 .reverse .day11__line{
-    animation: day11-line 4s infinite linear reverse
+    animation: day11-line 3s infinite linear reverse
 }
 
 @keyframes day11-line {
-    0%{left: calc(100% + 5em);}
-    100%{left: -5em;}
+    0%{left: calc(100% + 5em);visibility: hidden;visibility: visible;}
+    100%{left: -5em;visibility: hidden;visibility: visible;}
 }
 
 .day11__boot-left,
@@ -36,28 +38,28 @@
     width: 10em;
     height: 10em;
     position: absolute;
-    bottom: 11em;
+    bottom: 9em;
     background-image: url("https://100dayscss.com/codepen/doc-martens.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .day11__boot-left{
-    animation: day11-walk 3s infinite linear;
+    animation: day11-walk 2s infinite linear;
     animation-delay: 1s;
 }
 .reverse .day11__boot-left{
-    animation: day11-walk 3s infinite linear reverse;
+    animation: day11-walk 2s infinite linear reverse;
     animation-delay: 1s;
 }
 
 .day11__boot-right{
-    animation: day11-walk 3s infinite linear;
-    animation-delay: 2.5s;
+    animation: day11-walk 2s infinite linear;
+    animation-delay: 2s;
 }
 .reverse .day11__boot-right{
-    animation: day11-walk 3s infinite linear reverse;
-    animation-delay: 2.5s;
+    animation: day11-walk 2s infinite linear reverse;
+    animation-delay: 2s;
 }
 
 @keyframes day11-walk {
@@ -79,7 +81,13 @@
     cursor: pointer;
     transition: background-color .5s ease;
 }
-
 .day10__reverse:hover{
     background-color: #484848;
+}
+
+.reverse .day10__reverse{
+    background-color: #484848;
+}
+.reverse .day10__reverse:hover{
+    background-color: #242424;
 }
