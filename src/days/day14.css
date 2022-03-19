@@ -1,0 +1,148 @@
+.day14{
+    background-color: #4B4841;
+}
+
+.day14__card{   
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
+    position: absolute;
+    background-color: #FFCE4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: #00000060 .5em .5em 1em;
+
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+.day14__card:nth-child(2){
+    transform: rotateX(-180deg);
+}
+
+.day14__container{
+    padding: 2em 1em;
+    width: 10em;
+    height: 10em;
+    position: relative;
+    overflow: hidden;
+}
+
+.day14__card img{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+    width: 8em;
+    height: 10em;
+    bottom: 0;
+}
+.day14__card:nth-child(1) img{animation: day14-bycicle 1s linear infinite;}
+.day14__card:nth-child(2) img{animation: day14-helicopter 1s linear infinite;}
+
+@keyframes day14-bycicle {
+    50%{transform: scaleY(1.03) translate(0,-01.5%);}
+    100%{}
+}
+
+@keyframes day14-helicopter {
+    50%{transform: translate(0,-05%);}
+    100%{}
+}
+
+.day14__card:nth-child(1) .day14__line{
+    background: #4B4841;
+    position: absolute;
+    right: 0;
+    bottom: 2.5em;
+    width: 1em;
+    transform: translate(100%,0);
+    height: .3em;
+    border-radius: 1em;
+    animation: day14-bike-line 1s infinite linear;
+}
+.day14__card:nth-child(1) .day14__line:nth-child(2){
+    width: 1.2em;
+    animation-delay: .3s;
+}
+.day14__card:nth-child(1) .day14__line:nth-child(3){
+    width: .4em;
+    animation-delay: .6s;
+}
+.day14__card:nth-child(1) .day14__line:nth-child(4){
+    width: .3em;
+    animation-delay: .8s;
+}
+.day14__card:nth-child(1) .day14__line:nth-child(5){
+    width: 1em;
+    animation-delay: .1s;
+}
+.day14__card:nth-child(1) .day14__line:nth-child(6){
+    width: 1.5em;
+    animation-delay: .1s;
+}
+.day14__card:nth-child(1) .day14__line:nth-child(7){
+    width: 1.4em;
+    animation-delay: .3s;
+}
+
+@keyframes day14-bike-line {
+    100%{
+        transform: translate(-10em,0);
+    }
+}
+
+.day14__efect-3d{
+    width: 20em;
+    height: 12em;
+    padding: 1em;
+    position: relative;
+    
+    perspective: 800px;
+} 
+
+.day14__card:nth-child(2) .day14__line{
+    background: #4B4841;
+    position: absolute;
+    right: 0;
+    bottom: 2.4em;
+    width: 1em;
+    transform: translate(100%,0);
+    height: .2em;
+    border-radius: 1em;
+    animation: day14-bike-line 1s infinite linear;
+}
+.day14__card:nth-child(2) .day14__line:nth-child(2){
+    width: 1.5em;
+    bottom: 1,5em;
+    animation-delay: .3s;
+}
+.day14__card:nth-child(2) .day14__line:nth-child(3){
+    bottom: 2em;
+    animation-delay: .6s;
+}
+.day14__card:nth-child(2) .day14__line:nth-child(4){
+    width: 1.5em;
+    bottom: 4.4em;
+    animation-delay: .8s;
+}
+.day14__card:nth-child(2) .day14__line:nth-child(5){
+    bottom: 5.4em;
+    animation-delay: .1s;
+}
+.day14__card:nth-child(2) .day14__line:nth-child(6){
+    bottom: 8em;
+    width: 1.5em;
+    animation-delay: .1s;
+}
+.day14__card:nth-child(2) .day14__line:nth-child(7){
+    bottom: 7.4em;
+    animation-delay: .3s;
+}
+
+.day14__efect-3d:hover > .day14__card:nth-child(1){
+    transform:rotateX(180deg);
+}
+.day14__efect-3d:hover > .day14__card:nth-child(2){
+    transform:rotateX(0deg);
+}

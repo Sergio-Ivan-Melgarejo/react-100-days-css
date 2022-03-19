@@ -62,7 +62,7 @@
 }
 
 .day13__item:hover > .day13__container-plus .day13__plus{
-    transform: scale(1);
+    transform: scale(1.5);
     visibility: visible;
     opacity: 1;
 }
@@ -72,22 +72,24 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    transform: translate(0,-100%);
+    height: 45%;
+    transform: translate(0,-101%);
     transition: transform .5s ease;
+    transition-delay: .5s;
 }
 .active .day13__user-top{
     transform: translate(0,0);
+    transition-delay: 0s;
 }
 
 .day13__container-img-user{
-    width: 5.5em;
-    height: 5.5em;
+    width: 7em;
+    height: 7em;
     position: absolute;
     border-radius: 50%;
     overflow: hidden;
     left: 50%;
-    top: 50%;
+    top: 45%;
     background-color: var(--day13-text-color);
     box-shadow: var(--box-shadow);
     transform: translate(-50%,-20em);
@@ -108,16 +110,18 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 55%;
     background: var(--day13-color);
-    padding: 3.5em 1em 1em;
+    padding: 4.5em 1em 1em;
     text-align: center;
     color: var(--day13-text-color);
     transform: translate(0,100%);
     transition: transform .5s ease;
+    transition-delay: .5s;
 }
 .active .day13__user-bottom{
     transform: translate(0,0);
+    transition-delay: 0s;
 }
 
 .day13__user-name{
@@ -126,17 +130,21 @@
 
 .day13__footer{
     display: flex;
-    justify-content: space-evenly;
-    padding: 1.5em;
+    justify-content: center;
+    padding: 1em;
+    gap: 2em;
 }
 
 .day13__footer i{
-    font-size: 1.2em;
-    border: .05em solid var(--day13-text-color);
+    font-size: 1em;
+    border: 1px solid var(--day13-text-color);
     padding: .6em;
     border-radius: 50%;
     cursor: pointer;
     transition: color .5s ease, background-color .5s ease;
+}
+.day13__footer i:nth-child(3){
+    padding: .65em .6em .55em;
 }
 
 .day13__footer i:hover{
