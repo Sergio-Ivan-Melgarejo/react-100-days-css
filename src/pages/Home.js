@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <header className='row main-app home text-center text-md-start'>
         <InfoCard />
-        {params ? <Card /> : <Outlet />}
+        {params ? <Card  /> : <Outlet />}
     </header>
   )
 }

@@ -31,7 +31,6 @@ const Day14 = () => {
           </div>
         </div>
 
-
       </div>
     </div>
   )
