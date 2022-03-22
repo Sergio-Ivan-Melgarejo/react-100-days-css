@@ -9,7 +9,6 @@
     border-radius: 5px;
     box-shadow: #00000060 .5em .5em 1em;
 }
-.day15__card.prueba{background-color: red;}
 
 .day15__h1{
     font-size: 1em;
@@ -96,8 +95,6 @@
 @keyframes day15-loading {
     100%{transform: rotate(360deg);}
 }
-
-
 
 .day15__input{
     position: absolute;
