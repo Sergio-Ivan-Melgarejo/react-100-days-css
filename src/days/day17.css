@@ -1,0 +1,54 @@
+.day17{
+    position: relative;
+    --day17-color:#242424;
+}
+
+.day17__background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg,#fff 80%,var(--day17-color) 80%);
+    background-size: 1em;
+    transform: rotate(-45deg) scale(1.4);
+}
+
+.day17__center{
+    width: 15em;
+    height: 15em;
+    background-color: var(--day17-color);
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day17__polygon{
+    width: 10em;
+}
+	
+.day17__light {
+	fill: #eee;
+	transition: all .5s ease-in-out;
+}
+.day17__middle {
+	fill: #ccc;
+	transition: all .5s ease-in-out;
+}
+.day17__dark {
+	fill: #aaa;
+	transition: all .5s ease-in-out;
+}
+	
+.day17__center:hover >.day17__polygon .day17__light {
+	fill: #aaa;
+}
+.day17__center:hover >.day17__polygon .day17__middle {
+	fill: #eee;
+}
+.day17__center:hover >.day17__polygon .day17__dark {
+	fill: #ccc;
+}
+		
