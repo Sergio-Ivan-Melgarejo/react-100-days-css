@@ -12,8 +12,9 @@ import Card from "./components/Card";
 import { useEffect } from "react";
 
 function App() {
+  
   useEffect(() => {
-    fetch("./data.json")
+    fetch("./Data/DataDays.json")
     .then(res => res.json())
     .then(res => console.log(res))
   }, [])
@@ -25,7 +26,8 @@ function App() {
         <div className="row align-items-center px-3 justify-content-center">
           <Routes>
               <Route path="/" element={<Home />} >
-                <Route path="/:keyword" element={<Card />} />
+                <Route path=":keyword" element={<Card />} >
+                </Route>
               </Route>
               <Route path="/abaout/" element={<About />} />
               <Route path="/how-to/" element={<Join />} />

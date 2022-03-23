@@ -7,11 +7,13 @@ import Card from '../components/Card'
 
 const Home = () => {
   const params = useParams()
+  console.log(params ? "true" : "false")
   console.log(params)
   return (
     <header className='row main-app home text-center text-md-start'>
         <InfoCard />
-        {params ? <Card  /> : <Outlet />}
+        
+        {params.keyword ?  <Outlet /> : <Card home={true} />}
     </header>
   )
 }
