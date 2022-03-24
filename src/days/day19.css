@@ -1,0 +1,55 @@
+.day19{
+    background-color: #252252;
+    position: relative;
+
+    --day19-color-1:#252252;
+    --day19-color-2:#293d96;
+    --day19-color-3:#993390;
+}
+
+.day19__background{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(90deg, var(--day19-color-1) 33.333%,var(--day19-color-2) 33.333%, var(--day19-color-2) 66.666%, var(--day19-color-3) 66.666%);
+    left: 0;
+    transition: left 1s ease;
+}
+
+.day19__color1 .day19__background{left: 0;}
+.day19__color2 .day19__background{left: -100%;}
+.day19__color3 .day19__background{left: -200%;}
+
+
+.day19__fieldset{
+    position: relative;
+    padding: .3em 1em 0 0;
+}
+
+.day19__radio{
+    visibility: hidden;
+}
+
+.day19__label{
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: .3em solid #fff;
+    cursor: pointer;
+}
+
+.day19__circle{
+    width: 3.5em;
+    height: 3.5em;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 1.05em;
+    left: 1.55em;
+    transition: left 1s ease;
+}
+
+.day19__color1 .day19__circle{left: 1.55em;}
+.day19__color2 .day19__circle{left: 7.35em;}
+.day19__color3 .day19__circle{left: 13.15em;}
