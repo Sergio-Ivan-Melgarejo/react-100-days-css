@@ -1,0 +1,70 @@
+.day21{
+    --day21-bg:#2C2E2E;
+    --day21-color:#F4D146;
+
+    background-color: var(--day21-bg);
+}
+
+.day21__pacman{
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    background: var(--day21-color);
+    position: relative;
+}
+.day21__pacman::before,
+.day21__pacman::after{
+    content: "";
+    position: absolute;
+    background-color: var(--day21-bg);
+}
+
+.day21__pacman::before{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    right: 3em;
+    top: 1em;
+    animation: day21-eye 1s linear infinite;
+}
+
+@keyframes day21-eye {
+    50%{transform: translate(50%,50%);}
+    100%{transform: translate(0);}
+}
+
+.day21__pacman::after{
+    width: 4em;
+    height: 6em;
+    right: 0;
+    top: 50%;
+    transform: translate(1px,-50%);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    animation: day21-mouth 1s infinite linear;
+}
+
+@keyframes day21-mouth {
+    50%{clip-path: polygon(100% 50%, 0 50%, 100% 50%);}
+    100%{clip-path: polygon(100% 0, 0 50%, 100% 100%);}
+}
+
+.day21__circle-container{
+    height: 1em;
+    width: 50%;
+    position: absolute;
+    right: 12px;
+    display: flex;
+    gap: 2em;
+    animation: day21-circle .5s linear infinite;
+}
+
+@keyframes day21-circle {
+    100%{transform: translate(-3em);}
+}
+
+.day21__circle{
+    background-color: var(--day21-color);
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}

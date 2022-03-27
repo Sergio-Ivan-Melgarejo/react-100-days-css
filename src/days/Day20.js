@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./day20.css"
 
 const Day20 = () => {
-    const [submit, setSubmit] = useState(true)
+    const [submit, setSubmit] = useState(false)
   return (
     <div className={submit ? "days day20 submit" : 'days day20'}>
         <div className='day20__center'>
