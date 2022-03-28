@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
+
+.day22{
+    background-color: #252525;
+    color: #fff;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+
+    --bg-circle:#343434;
+    --progress:rgb(228, 72, 72);
+    --text-color:#b3b3b3;
+    --number-color:#f3f3f3;
+}
+
+.day22__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "title title"
+    "kcal kcal"
+    "steps km";
+    text-align: center;
+}
+
+.day22__title{
+    grid-area: title;
+    margin: 1em auto;
+    font-size: 1em;
+    line-height: 1.1em;
+}
+
+.day22__span{
+    display: block;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.day22__kcal,
+.day22__steps,
+.day22__km{
+    grid-area: kcal;
+    position: relative;
+}
+
+.day22__bg-circle{
+    fill: none;
+    stroke-width: 1em;
+    stroke: var(--bg-circle);
+}
+
+.day22__progress{
+    fill: none;
+    stroke-width: .6em;
+    stroke: var(--progress);
+}
+
+.day22__svg{
+    width: 10em;
+    height: 10em;
+}
+
+.day22__number{
+    position: absolute;
+    left: 50%;
+    top: 2.2em;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    color: var(--number-color);
+}
+
+.day22__text{
+    position: absolute;
+    left: 50%;
+    top: 6.2em;
+    transform: translate(-50%,-50%);
+    color: var(--text-color);
+}
+
+.day22__steps,
+.day22__km{
+    font-size: .6em;
+    padding: 0 1em;
+}
+
+.day22__steps{grid-area: steps;}
+.day22__km{grid-area: km;}
+
+.day22__svg .day22__progress{
+    stroke-dashoffset: 365;
+    stroke-dasharray: 380;
+    stroke-linecap: round;
+    transform: rotate(-85deg);
+	transform-origin: 50% 50%;
+}
+
+.day22__svg-1 .day22__progress{
+    animation: 1.5s forwards ease day22-1;
+    animation-delay: .5s;
+}
+.day22__svg-2 .day22__progress{
+    animation: 1.5s forwards ease day22-2;
+    animation-delay: .5s;
+}
+.day22__svg-3 .day22__progress{
+    animation: 1.5s forwards ease day22-3;
+    animation-delay: .5s;
+}
+
+@keyframes day22-1 {
+    100%{stroke-dashoffset:55;}
+}
+@keyframes day22-2 {
+    100%{stroke-dashoffset:235;}
+}
+@keyframes day22-3 {
+    100%{stroke-dashoffset:205;}
+}
