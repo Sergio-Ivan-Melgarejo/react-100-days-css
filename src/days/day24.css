@@ -1,0 +1,130 @@
+.day24{
+    background-color: rgb(87, 211, 87);
+    --day24-color:rgb(255, 255, 255);
+    --day24-opacity-color:#00000020;
+}
+
+.day24__checkbox{
+    position: absolute;
+    visibility: hidden;
+}
+
+.day24__button{
+    position: absolute;
+    border: .2em solid var(--day24-color);
+    border-radius: 2em;
+    font-size: 1.5em;
+    color: var(--day24-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: .2em;
+    font-weight: bolder;
+
+    height: 3em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow: hidden;
+    
+    transition: all ease .3s;
+}
+
+.day24__button:hover{
+    background-color: var(--day24-opacity-color);
+}
+
+#button:checked ~ .day24__button{
+    animation: day24-button 2s ease-out forwards;
+}
+
+@keyframes day24-button {
+	0% {}
+	50% {
+        color: transparent;
+        border-color: transparent;
+        width: 3em;
+        background-color: var(--day24-opacity-color);
+	}
+    95%{
+        color: transparent;
+        border-color: transparent;
+        width: 3em;
+        background-color: var(--day24-opacity-color);
+    }
+	100% {
+        color: transparent;
+        border-color: var(--day24-color);
+        width: 3em;
+        background-color: var(--day24-color);
+    }
+}
+
+.day24__circle{
+    position: relative;
+    width: 5em;
+    height: 5em;
+
+	z-index: 2;
+	fill: none;
+	stroke: var(--day24-color);
+	stroke-width: .2em;
+	stroke-linecap: round;
+	stroke-dasharray: 430;
+	stroke-dashoffset: 430;
+	pointer-events: none;
+	transform: rotate(-90deg);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#button:checked ~ .day24__circle{
+    animation: day24-circle 2s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes day24-circle {
+	0% {
+		stroke-dashoffset: 430;
+        opacity: 0;
+        visibility: hidden;
+	}
+	50% {
+		stroke-dashoffset: 0;
+		stroke-dasharray: 430;
+		transform: rotate(-90deg) scale(1);
+		opacity: 1;
+        visibility: visible;
+	}
+	90%, 100% {
+		stroke-dasharray: 900;
+		transform: rotate(-90deg) scale(2);
+		opacity: 0;
+	}
+}
+
+.day24__icon{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    
+    opacity: 0;
+    visibility: hidden;
+}
+
+#button:checked ~ .day24__button .day24__icon{
+    animation: day24-icon 2s ease-out forwards;
+}
+
+@keyframes day24-icon {
+	95% {
+		opacity: 0;
+        visibility: visible;
+	}
+	100% {
+		opacity: 1;
+        visibility: visible;
+	}
+}
