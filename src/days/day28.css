@@ -1,0 +1,51 @@
+.day28{
+    background-color: rgb(53, 52, 52);
+}
+
+.day28__container{
+    position: relative;
+}
+
+.day28__bell{
+    fill: rgb(228, 228, 56);
+    animation: day28-bell 1.5s ease infinite;
+}
+
+@keyframes day28-bell {
+    30%{transform: rotate(10deg);}
+    35%{transform: rotate(-10deg);}
+    40%{transform: rotate(10deg);}
+    45%{transform: rotate(-10deg);}
+    50%{transform: rotate(10deg);}
+    55%{transform: rotate(-10deg);}
+    60%{transform: rotate(10deg);}
+    65%{transform: rotate(-10deg);}
+    70%{transform: rotate(10deg);}
+    100%{}
+}
+
+.day28__circle{
+    position: absolute;
+    top: -10%;
+    left: -25%;
+    width: 150%;
+    height: 120%;
+    border-radius:50%;
+    border-color: transparent rgb(228, 228, 56) transparent rgb(228, 228, 56);
+    border-width: .2em;
+    border-style: solid;
+    visibility: hidden;
+    opacity: 0;
+    animation: day28-ring 1.5s ease infinite;
+    transform: scale(.5);
+}
+
+.day28__circle:nth-child(1){animation-delay: .2s;}
+.day28__circle:nth-child(2){animation-delay: .4s;}
+.day28__circle:nth-child(3){animation-delay: .6s;}
+
+@keyframes day28-ring {
+    30%{visibility: hidden;opacity: 0;}
+    50%{opacity: 1;visibility: visible;}
+    100%{transform: scale(2.5);}
+}
