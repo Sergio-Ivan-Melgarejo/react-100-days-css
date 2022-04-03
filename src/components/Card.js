@@ -29,13 +29,14 @@ import Day25 from '../days/Day25'
 import Day26 from '../days/Day26'
 import Day27 from '../days/Day27'
 import Day28 from '../days/Day28'
+import Day29 from '../days/Day29'
 
 const Card = (props) => {
     const params = useParams()
     console.log(params)
   return (
     <div className='container-project'>
-    <Day28 />
+    <Day29 />
     <div className='footer'>
       <div className="container-button">
         <Link to={"/day-1"} className="button-change">
