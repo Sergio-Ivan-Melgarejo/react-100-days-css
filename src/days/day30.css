@@ -1,0 +1,56 @@
+.day30{
+    background-color: rgb(109, 6, 194);
+    overflow: hidden;
+}
+
+.day30__circle{
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: .1em solid #fff;
+
+    transform: translateY(20%) scale(0);
+    opacity: 0;
+    visibility: hidden;
+	animation: day30-circle 2.5s linear infinite;
+}
+
+@keyframes day30-circle {
+    40%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(15%) scale(0);
+    }
+    90%, 100%{
+        transform: translateY(15%) scale(5);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.day30__svg{
+    fill: none;
+	stroke: #fff;
+    stroke-width: .1em;
+	stroke-linecap: round;
+    width: 140%;
+    height: 10em;
+    position: absolute;
+
+    animation: day30-line 2.5s linear infinite;
+}
+
+@keyframes day30-line {
+	0% {
+		stroke-dasharray: 10 20 25 40 60 560;
+		stroke-dashoffset: 780;
+	}
+    100%{
+		stroke-dasharray: 10 20 25 40 60 560;
+		stroke-dashoffset: 70;
+	}
+}
+
+.day30__svg-1{transform: rotate(45deg);}
+.day30__svg-2{transform: rotate(-45deg);}
