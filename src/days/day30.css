@@ -3,18 +3,25 @@
     overflow: hidden;
 }
 
-.day30__circle{
+.day30__circle-1,
+.day30__circle-2,
+.day30__circle-3,
+.day30__circle-4{
     position: absolute;
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    border: .1em solid #fff;
+    border: .1em solid rgb(89, 7, 156);
 
     transform: translateY(20%) scale(0);
     opacity: 0;
     visibility: hidden;
 	animation: day30-circle 2.5s linear infinite;
 }
+
+.day30__circle-2{animation-delay: .2s;}
+.day30__circle-3{animation-delay: .4s;}
+.day30__circle-4{animation-delay: .6s;}
 
 @keyframes day30-circle {
     40%{
@@ -29,7 +36,10 @@
     }
 }
 
-.day30__svg{
+.day30__svg-1,
+.day30__svg-2,
+.day30__svg-3,
+.day30__svg-4{
     fill: none;
 	stroke: #fff;
     stroke-width: .1em;
@@ -54,3 +64,5 @@
 
 .day30__svg-1{transform: rotate(45deg);}
 .day30__svg-2{transform: rotate(-45deg);}
+.day30__svg-3{transform: rotate(135deg);}
+.day30__svg-4{transform: rotate(-135deg);}

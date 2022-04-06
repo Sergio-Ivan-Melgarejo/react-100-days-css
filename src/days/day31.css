@@ -1,0 +1,39 @@
+.day31{
+    background-color: rgb(235, 55, 55);
+    flex-direction: column;
+    gap: .5em;
+}
+
+.day31__circle{
+    width: 1em;
+    height: 1em;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: day31-circle 100s infinite;
+    animation: day31-circle ease-in-out infinite;
+}
+
+@keyframes day31-circle {
+	0%, 100% {
+		transform: translate3d( 5em, 0,0 );
+	}
+	50% {
+		transform: translate3d( -5em, 0,0 );
+	}
+}
+
+.day31__circle:nth-child(1){animation-duration:1.090909090909091s}
+.day31__circle:nth-child(2){animation-duration:1.111111111111111s}
+.day31__circle:nth-child(3){animation-duration:1.132075471698113s}
+.day31__circle:nth-child(4){animation-duration:1.153846153846154s}
+.day31__circle:nth-child(5){animation-duration:1.176470588235294s}
+.day31__circle:nth-child(6){animation-duration:1.2s}
+.day31__circle:nth-child(7){animation-duration:1.224489795918367s}
+.day31__circle:nth-child(8){animation-duration:1.25s}
+.day31__circle:nth-child(9){animation-duration:1.276595744680851s}
+.day31__circle:nth-child(10){animation-duration:1.304347826086957s}
+.day31__circle:nth-child(11){animation-duration:1.333333333333333s}
+.day31__circle:nth-child(12){animation-duration:1.363636363636364s}
+.day31__circle:nth-child(13){animation-duration:1.395348837209302s}
+.day31__circle:nth-child(14){animation-duration:1.428571428571429s}
+.day31__circle:nth-child(15){animation-duration:1.463414634146341s}
