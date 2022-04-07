@@ -94,27 +94,28 @@
     width: 100%;
 }
 
-/* clip-path ( sumar el primero 1, sumar al segundo 4 ) */
 .day5__bar-blue,
 .day5__bar-red{
     position: absolute;
-    background-color: var(--color-red);
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    /* clip-path: 
+    transform: rotateX(180deg);
+    transition: clip-path 1s ease;
+}
+
+.day5__bar-red{
+    background-color: var(--color-red);  clip-path: 
     polygon(4% 46%, 20% 82%, 36% 75%, 52% 88%, 67% 52%, 81% 44%, 96% 46%,
-     96% 49%, 81% 47%, 67% 55%, 52% 91%, 36% 78%, 20% 85%, 4% 49%);  */
-     transform: rotateX(180deg);
-     transition: clip-path 1s ease;
+     96% 49%, 81% 47%, 67% 55%, 52% 91%, 36% 78%, 20% 85%, 4% 49%); 
 }
 
 .day5__bar-blue{
     background-color: var(--color-blue);
-    /* clip-path: 
+    clip-path: 
     polygon(4% 27%, 20% 42%, 36% 23%, 52% 37%, 67% 26%, 81% 14%, 96% 21%,
-     96% 24%, 81% 17%, 67% 29%, 52% 40%, 36% 26%, 20% 45%, 4% 30%); */
+     96% 24%, 81% 17%, 67% 29%, 52% 40%, 36% 26%, 20% 45%, 4% 30%);
 }
 
 .day5__circle-blue,
@@ -170,7 +171,7 @@
     transform: translate(-50%, calc( -100% - 1em ));
 }
 
-/* .day5__circle-red.day5__mon{left: 3%;bottom: 45%;}
+.day5__circle-red.day5__mon{left: 3%;bottom: 45%;}
 .day5__circle-red.day5__tue{left: 19%;bottom: 81%;}
 .day5__circle-red.day5__wed{left: 35%;bottom: 74%;}
 .day5__circle-red.day5__thu{left: 51%;bottom: 87%;}
@@ -184,7 +185,7 @@
 .day5__circle-blue.day5__thu{left: 51%;bottom: 36%;}
 .day5__circle-blue.day5__fri{left: 66%;bottom: 25%;}
 .day5__circle-blue.day5__sat{left: 80%;bottom: 13%;}
-.day5__circle-blue.day5__sun{left: 95%;bottom: 20%;} */
+.day5__circle-blue.day5__sun{left: 95%;bottom: 20%;}
 
 .day5__bottom{
     display: flex;
