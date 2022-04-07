@@ -1,26 +1,162 @@
-{
-    "day1":{
-        "img":"",
-        "github":"",
+[
+    {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/rNYbWmO",
         "title":"100 Days CSS",
-        "text":"An easy start into the challenge with a custom build number with gradient.",
-        "num":1
+        "text":"An easy start into the challenge with a custom build number with gradient."
     },
-    "day2":{
-        "img":"",
-        "github":"",
+    {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/YzEMRPj",
         "title":"Menu Icon",
-        "text":"Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher.",
-        "num":2
+        "text":"Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher."
     },
-    "day3":{
-        "img":"",
-        "github":"",
+    {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/eYeaVYX",
         "title":"The Pyramide",
-        "text":"Not as challenging as the real pyramids in Egypt, but the shadow path is not easy.",
-        "num":3
+        "text":"Not as challenging as the real pyramids in Egypt, but the shadow path is not easy."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/vYWqjMO",
+        "title":"Loading",
+        "text":"The best are always websites that do not need a loading status. If they do, here would be a calming one."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/YzYKrLX",
+        "title":"Statistic",
+        "text":"In a world of numbers, it is important to be able to interpret them correctly. Beautiful statistics help to capture these data."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/qBpWJeB",
+        "title":"Profile",
+        "text":"Who of you knows how many social media profiles you have already created? For a refreshing twist, you can also create one yourself."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/GRyRyvX",
+        "title":"Notifications, Search and Menu",
+        "text":"The three cornerstones of any application? Brought together in the smallest possible space."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/dyJyBqp",
+        "title":"Metaballs",
+        "text":"At first glance impossible to implement with CSS, but filters make this possible too."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/XWVbxMp",
+        "title":"Rainy Night",
+        "text":"The perfect time of day and the perfect weather to program in peace. The raindrops even shatter on the ground."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/GRyJzBL",
+        "title":"Watch",
+        "text":"Classic, noble, modern or playful? What do you want your favorite watch to look like?."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/KKZdyxX",
+        "title":"Walking Boots",
+        "text":"These boots are made for walking. Where are they going and for how long?."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/JjMGbgM",
+        "title":"Tooltip",
+        "text":"I'm quite sure, you already know what obsession means. But you can look it up anyways."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/GRyZrKX",
+        "title":"User Gallery",
+        "text":"An idea for a transition between user overview and profile page."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/JjMXVwQ",
+        "title":"Byciclopter",
+        "text":"Which side of the card do you want to use? Either drive or fly to work in the morning?."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/KKZMbXm",
+        "title":"Upload",
+        "text":"Yes, you can actually drag and drop a file in there. But don't worry, the upload process is faked."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/gOowqRw",
+        "title":"Blobby",
+        "text":"It appears, wobbles, changes its shape and disappears again. Just like that."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/wvpzOeE",
+        "title":"Penrose Triangle",
+        "text":"CSS makes even the impossible possible. Can you find out how it was done?."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/dyJNOex",
+        "title":"Elastic",
+        "text":"I thought for a long time about the best way to achieve this effect. In the end, the solution was easier than expected."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/QWadpbR",
+        "title":"Slider with Radio Buttons",
+        "text":"Why use JavaScript when you can use CSS? Selectors can be wildly combined with each other."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/popeqPm",
+        "title":"Send Mail",
+        "text":"Surprise your visitors with a nice animation instead of a simple 'request sent'."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/JjMWwzy",
+        "title":"Pac-Man",
+        "text":"Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka…"
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/mdpmJvN",
+        "title":"Fitness Tracker",
+        "text":"Don't sit on your chair all day long. Get up, jump, run, exercice and burn some calories."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/ZEvKNbQ",
+        "title":"Animated Typography",
+        "text":"Some big, bold and beautiful animated typography will enhance every boring header section."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/eYyRxVz",
+        "title":"Button",
+        "text":"Do you really wanna let your users guess if their actions were successful? No! So give them some feedback if they click a button."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/xxpLpEe",
+        "title":"Map Marker",
+        "text":"Did I just placed a marker in the middle of some water to get a nice color contrast? Maybe. Click on it for a nice transition."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/MWrEbmM",
+        "title":"Motivational Modal",
+        "text":"What's worse than a motivational quote? Three motivational quotes... so don't focus on the text and click through them quickly."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/abEVbww",
+        "title":"Checklist",
+        "text":"What's the great thing about working through your to-do list? That's right, the relieving feeling when you can check off the tasks."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/abEVwME",
+        "title":"Ring Ring",
+        "text":"Fortunately for you, I left out the alarm sound. But hopefully the signal color and the movement have served their purpose."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/Rwxjzvq",
+        "title":"Search Field",
+        "text":"You won't find anything unless you start looking. So go ahead, write something in the search box."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/GRyyMJZ",
+        "title":"Random Line",
+        "text":"What can I say, it is a line. A line that moves and circles something. What should it be? That's for you to decide."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/ExoQZmV",
+        "title":"Pendulum Wave",
+        "text":"If you are not yet fascinated by mathematics, you should be now at the latest. Wonderful what a small calculations brings forth."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/popLQvV",
+        "title":"Counter",
+        "text":"I wonder how high or low is the maximum you can count here? The transitions are pure CSS, but I used some JS for the counting."
     }
-}
+]

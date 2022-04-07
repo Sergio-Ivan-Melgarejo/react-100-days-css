@@ -5,15 +5,14 @@ import { Outlet, useParams } from 'react-router-dom'
 import InfoCard from "../components/InfoCard"
 import Card from '../components/Card'
 
-const Home = () => {
+const Home = (props) => {
   const params = useParams()
-  console.log(params ? "true" : "false")
-  console.log(params)
+  console.log(props,params)
+  console.log(props.days)
   return (
     <header className='row main-app home text-center text-md-start'>
-        <InfoCard />
-        
-        {params.keyword ?  <Outlet /> : <Card home={true} />}
+        <InfoCard days={props.days} day={params.day} />
+        {params.day?  <Outlet /> : <Card />}
     </header>
   )
 }

@@ -44,8 +44,8 @@
 }
 
 .day1__num-zero{
-    height: 3.5em;
-    width: 3.5em;
+    height: 6.5em;
+    width: 6.5em;
     position: absolute;
     border-radius: 50%;
     transform: translate(1.3em,-7.5em);

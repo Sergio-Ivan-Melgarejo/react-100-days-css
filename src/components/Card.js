@@ -36,18 +36,98 @@ import Day32 from '../days/Day32'
 import Day33 from '../days/Day33'
 
 const Card = (props) => {
-    const params = useParams()
-    console.log(params)
+  const params = useParams()
+
+  const day = parseInt(params.day) || 1;
+
+  const days = () =>{
+    // remover cuando termine
+
+    if(!isNaN(day)){
+      switch(day){
+        case 1:
+        return <Day1 />
+        case 2:
+        return <Day2 />
+        case 3:
+        return <Day3 />
+        case 4:
+        return <Day4 />
+        case 5:
+        return <Day5 />
+        case 6:
+        return <Day6 />
+        case 7:
+        return <Day7 />
+        case 8:
+        return <Day8 />
+        case 9:
+        return <Day9 />
+        case 10:
+        return <Day10 />
+        case 11:
+        return <Day11 />
+        case 12:
+        return <Day12 />
+        case 13:
+        return <Day13 />
+        case 14:
+        return <Day14 />
+        case 15:
+        return <Day15 />
+        case 16:
+        return <Day16 />
+        case 17:
+        return <Day17 />
+        case 18:
+        return <Day18 />
+        case 19:
+        return <Day19 />
+        case 20:
+        return <Day20 />
+        case 21:
+        return <Day21 />
+        case 22:
+        return <Day22 />
+        case 23:
+        return <Day23 />
+        case 24:
+        return <Day24 />
+        case 25:
+        return <Day25 />
+        case 26:
+        return <Day26 />
+        case 27:
+        return <Day27 />
+        case 28:
+        return <Day28 />
+        case 29:
+        return <Day29 />
+        case 30:
+        return <Day30 />
+        case 31:
+        return <Day31 />
+        case 32:
+        return <Day32 />
+        default: return <Day32 />
+      }
+    }
+    return <Day1
+     />
+  }
+
   return (
     <div className='container-project'>
-    <Day33 />
+    {
+      days()
+    }
     <div className='footer'>
       <div className="container-button">
-        <Link to={"/day-1"} className="button-change">
+        <Link to={`/days/${day <= 1 ? 100 : (day - 1)}`} className="button-change">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
         </Link>
         <span className='span'>Switch Day</span>
-        <Link to={"/day-3"} className="button-change">
+        <Link to={`/days/${day >= 99 ? 1 : (day + 1)}`} className="button-change">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
         </Link>
         </div>

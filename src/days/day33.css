@@ -3,6 +3,7 @@
     background: linear-gradient(to top,#97c9e2,#75C1E8);
     --day33-yellow:rgb(238, 211, 61);
     --day33-white:rgb(255, 255, 255);
+    position: relative;
 }
 
 .day33__sun{

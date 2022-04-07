@@ -1,6 +1,7 @@
 .day30{
     background-color: rgb(109, 6, 194);
     overflow: hidden;
+    position: relative;
 }
 
 .day30__circle-1,

@@ -37,9 +37,9 @@ const Day13 = () => {
         <div className='day13__user-bottom'>
             <h1 className='day13__user-name'>@User-0123</h1>
             <footer className='day13__footer'>
-                <i class="fas fa-phone"></i>
-                <i class="fas fa-comment"></i>
-                <i class="fas fa-heart"></i>
+                <i className="fas fa-phone"></i>
+                <i className="fas fa-comment"></i>
+                <i className="fas fa-heart"></i>
             </footer>
         </div>
 
