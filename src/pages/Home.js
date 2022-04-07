@@ -8,10 +8,12 @@ import Card from '../components/Card'
 const Home = (props) => {
   const params = useParams()
   console.log(props,params)
-  console.log(props.days)
+
+  const day = parseInt(params.day) || 1;
+
   return (
     <header className='row main-app home text-center text-md-start'>
-        <InfoCard days={props.days} day={params.day} />
+        <InfoCard day={props.days ? props.days[params.day] : null} />
         {params.day?  <Outlet /> : <Card />}
     </header>
   )

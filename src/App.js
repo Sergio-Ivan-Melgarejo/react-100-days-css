@@ -18,11 +18,12 @@ function App() {
 useEffect(() => {
     fetch("/Data/DataDays.json")
     .then(res => res.json())
-    .then(res => setData(res))
+    .then((dog) => console.log(dog))
+    // .then(res => res !== undefined ? setData(res) : null)
 
-    // fetch("https://dog.ceo/api/breeds/image/random")
-    // .then((response) => response.json())  
-    // .then((dog) => console.log(dog))
+    fetch("https://dog.ceo/api/breeds/image/random")
+    .then((response) => response.json())  
+    .then((dog) => console.log(dog))
 
   }, [])
   

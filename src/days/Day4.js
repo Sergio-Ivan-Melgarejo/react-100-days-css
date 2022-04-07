@@ -3,8 +3,8 @@ import "./day4.css"
 
 const Day4 = () => {
   return (
-    <div class="days day4">
-        <div class="day4__circle"></div>
+    <div className="days day4">
+        <div className="day4__circle"></div>
     </div>
   )
 }
