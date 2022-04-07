@@ -7,14 +7,14 @@ const Day32 = () => {
   const [effect, setEffect] = useState("")
 
   const handleLess = () =>{
-    setEffect("no-effect")
+    setEffect("")
     setCountOne(countOne - 1);
     setCountTwo(countOne)
     setTimeout(()=>setEffect("less"),100)
   }
 
   const handlePlus = () =>{
-    setEffect("no-effect")
+    setEffect("")
     setCountOne(countOne + 1);
     setCountTwo(countOne)
     setTimeout(()=>setEffect("plus"),100)
