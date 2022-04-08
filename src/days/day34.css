@@ -1,0 +1,60 @@
+.day34{
+    background-color: rgb(59, 133, 231);
+}
+
+.day34__container{position: relative;
+}
+  
+.day34__container::before,
+.day34__container::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: .4em;
+    left: 0;
+    border-radius: .5em;
+    transform: scaleX(0);
+    animation: expand .6s ease-in-out forwards;
+}
+  
+.day34__container::before{top: -1em;}
+.day34__container::after{bottom: -1em; }
+
+@keyframes expand {100% {transform: scaleX(1.1);}}
+  
+.day34__svg{
+    width: 20em;;
+    
+	stroke: rgb(59, 133, 231);
+	stroke-dasharray: 270;
+	stroke-dashoffset: 0;
+}
+
+.day34__one {
+    fill: #fff;
+    stroke-width: 6;
+    animation: day34 1.2s ease-in-out both;
+}
+
+.day34__two {
+    fill: none;
+    stroke-width: 12;
+    animation: day34 1.7s ease-in-out both;
+}
+
+.day34__three {
+    fill: none;
+    stroke-width: 18;
+    animation: day34 2.2s ease-in-out both;
+}
+
+@keyframes day34 {	
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: 270;
+    }
+}
+  

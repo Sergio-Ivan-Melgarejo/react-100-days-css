@@ -9,23 +9,23 @@ import About from "./pages/About";
 import Join from "./pages/Join";
 import MyProgress from "./pages/MyProgress";
 import Card from "./components/Card";
-import { useEffect, useState } from "react";
 import ErrorPage from "./pages/ErrorPage";
 
+const jsonData= require('./Data/DataDays.json'); 
+
 function App() {
-  const [data, setData] = useState(null)
 
-useEffect(() => {
-    fetch("/Data/DataDays.json")
-    .then(res => res.json())
-    .then((dog) => console.log(dog))
-    // .then(res => res !== undefined ? setData(res) : null)
+  // useEffect(() => {
+  //   fetch("./Data/DataDays.json")
+  //   .then(res => res.json())
+  //   .then((res) => console.log({res}))
 
-    fetch("https://dog.ceo/api/breeds/image/random")
-    .then((response) => response.json())  
-    .then((dog) => console.log(dog))
+  //   // .then(res => res !== undefined ? setData(res) : null)
 
-  }, [])
+  //   // fetch("https://dog.ceo/api/breeds/image/random")
+  //   // .then((response) => response.json())  
+  //   // .then((dog) => console.log(dog))
+  // }, [])
   
   return (
     <main className="App container-fluid container-xl px-0 overflow-hidden">
@@ -33,9 +33,9 @@ useEffect(() => {
         <Nav />
         <div className="row align-items-center px-3 justify-content-center">
           <Routes>
-              <Route path="/" element={<Home days={data} />} />
-              <Route path="/days/*" element={<Home days={data} />} >
-                <Route path=":day" element={<Card />} />
+              <Route path="/" element={<Home jsonData={jsonData} />} />
+              <Route path="/days/*" element={<Home jsonData={jsonData} />} >
+                <Route path=":day" element={<Card jsonData={jsonData} />} />
               </Route>
               <Route path="/abaout/" element={<About />} />
               <Route path="/how-to/" element={<Join />} />

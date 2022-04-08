@@ -28,7 +28,6 @@
     position: absolute;
     right: 0; 
     transform: translateX(100%);
-    z-index: 10;
 }
 
 .day33__cloud-1{
@@ -54,4 +53,22 @@
 @keyframes day33-cloud {
     from{right: 0; transform: translateX(100%);}
     to{right: 100%; transform: translateX(-100%);}
+}
+
+.day33__plane{
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    fill: #fff;
+    stroke: #000;
+    stroke-width: .5em;
+    animation: day33-plane 5s linear forwards;
+    transform: translate(500%,100%) rotate(-35deg) rotateY(180deg);
+}
+
+@keyframes day33-plane {
+    0%{transform: translate(500%,100%) rotate(-5deg) rotateY(180deg)}
+    100%{transform: translate(100%,-400%) rotate(-5deg) rotateY(180deg) scale(0); visibility: hidden;}
 }

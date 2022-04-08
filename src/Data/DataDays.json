@@ -158,5 +158,15 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/popLQvV",
         "title":"Counter",
         "text":"I wonder how high or low is the maximum you can count here? The transitions are pure CSS, but I used some JS for the counting."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/RwxyVdw",
+        "title":"Sunny Day",
+        "text":"What else could be visible on this sunny day? Some birds, plains or even superman?."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/ExoLQNo",
+        "title":"Hello",
+        "text":"Yes, another animation of some text. But this time I used SVGs as a base. What kind of animation will you make?."
     }
 ]

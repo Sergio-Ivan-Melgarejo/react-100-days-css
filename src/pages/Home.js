@@ -5,16 +5,22 @@ import { Outlet, useParams } from 'react-router-dom'
 import InfoCard from "../components/InfoCard"
 import Card from '../components/Card'
 
-const Home = (props) => {
-  const params = useParams()
-  console.log(props,params)
 
-  const day = parseInt(params.day) || 1;
+const Home = ({jsonData}) => {
+  const params = useParams()
+    console.log(params)
+
+  let day = parseInt(params.day) || 1;
+
+  if(day > jsonData.length) day = 1
+  if(day < 1) day = (jsonData.length - 1)
+  console.log(day)
 
   return (
     <header className='row main-app home text-center text-md-start'>
-        <InfoCard day={props.days ? props.days[params.day] : null} />
-        {params.day?  <Outlet /> : <Card />}
+        <InfoCard day={{...jsonData[day - 1], num: (day)}} />
+        {params.day?  <Outlet /> : <Card jsonData={jsonData} />}
+        {params.day?  <h1>si</h1> : <h1>no</h1>}
     </header>
   )
 }

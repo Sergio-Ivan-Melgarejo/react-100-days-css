@@ -15,7 +15,7 @@ const Day7 = () => {
                             <div className='day7__line-2'></div>
                         </button>
                         <span className='day7__title'>Notifications</span>
-                        <i class="day7__icon fas fa-search" onClick={()=>setSearch(!search)}></i>
+                        <i className="day7__icon fas fa-search" onClick={()=>setSearch(!search)}></i>
                         <input type="search" className="day7__search" />
                     </header>
                     <div className='day7__notifications'>
@@ -37,31 +37,31 @@ const Day7 = () => {
             <ul className='day7__card-under'>
                 <li className='day7__li'>
                     <a className='day7__a' href='#!' >
-                    <i class="day7__icon fas fa-bars"></i>
+                    <i className="day7__icon fas fa-bars"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li className='day7__li'>
                     <a className='day7__a' href='#!' >
-                    <i class="day7__icon fas fa-address-card"></i>
+                    <i className="day7__icon fas fa-address-card"></i>
                         <span>Profile</span>
                     </a>
                 </li>
                 <li className='day7__li'>
                     <a className='day7__a' href='#!' >
-                        <i class="day7__icon fas fa-bell"></i>
+                        <i className="day7__icon fas fa-bell"></i>
                         <span>Notifications</span>
                     </a>
                 </li>
                 <li className='day7__li'>
                     <a className='day7__a' href='#!' >
-                        <i class="day7__icon fas fa-comment"></i>
+                        <i className="day7__icon fas fa-comment"></i>
                         <span>Messages</span>
                     </a>
                 </li>
                 <li className='day7__li'>
                     <a className='day7__a' href='#!' >
-                        <i class="day7__icon fas fa-cog"></i>
+                        <i className="day7__icon fas fa-cog"></i>
                         <span>Settings</span>
                     </a>
                 </li>

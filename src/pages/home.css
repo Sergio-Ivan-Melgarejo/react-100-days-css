@@ -70,6 +70,7 @@
 .home .container-project .button-change,
 .home .container-project .codePen,
 .home .container-project .reset{
+    display: block;
     border: none;
     display: flex;
     justify-content: center;
@@ -83,6 +84,8 @@
     width: 2.5em;
     outline-color: var(--color);
 }
+
+.home .container-project .codePen{padding: .4em;}
 
 .home .container-project .button-change:hover,
 .home .container-project .codePen:hover,
