@@ -11,7 +11,7 @@ import MyProgress from "./pages/MyProgress";
 import Card from "./components/Card";
 import ErrorPage from "./pages/ErrorPage";
 
-const jsonData= require('./Data/DataDays.json'); 
+const jsonData = require('./Data/DataDays.json'); 
 
 function App() {
 
@@ -40,7 +40,7 @@ function App() {
               <Route path="/abaout/" element={<About />} />
               <Route path="/how-to/" element={<Join />} />
               <Route path="/leaderboard/" element={<h2>aun no disponible</h2>} />
-              <Route path="/progress/" element={<MyProgress />} />
+              <Route path="/progress/" element={<MyProgress jsonData={jsonData} />} />
               <Route path="*" element={<ErrorPage/>} />
           </Routes>
         </div>

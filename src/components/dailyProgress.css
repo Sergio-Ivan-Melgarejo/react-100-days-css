@@ -13,4 +13,14 @@
     height: 3em;
     line-height: 3em;
     border-radius: 2px;
+    user-select: none;
+}
+
+.btn-success{
+    background-color: rgb(119, 231, 84) !important;
+    transition: background-color .3s ease;
+}
+
+.btn-success:hover{
+    background-color: rgb(78, 192, 55) !important;
 }

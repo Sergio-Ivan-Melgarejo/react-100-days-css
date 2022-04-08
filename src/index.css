@@ -6,15 +6,12 @@
   --primary-text-color-strong:rgb(27, 28, 31);
   --second-text-color:rgba(107,114,128);
   --button-text-color:rgba(255,255,255);
-  
 }
 
 .dark{
-  --color: #61dafb;
-  --opacity-color: #61dafb85;
   --bg-color: #282c34;  
-  --primary-text-color:rgb(75, 85, 99);
-  --second-text-color:rgb(107, 114, 128);
+  --primary-text-color:rgb(211, 216, 223);
+  --second-text-color:rgb(163, 167, 175);
   --button-text-color:rgba(255,255,255);
 }
 
