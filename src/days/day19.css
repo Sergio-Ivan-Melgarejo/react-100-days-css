@@ -41,24 +41,24 @@
 
 .day19__label{
     display: inline-block;
-    width: 4.6em;
-    height: 4.6em;
+    width: 5em;
+    height: 5em;
     border-radius: 50%;
     border: .2em solid #fff;
     cursor: pointer;
 }
 
 .day19__circle{
-    width: 4em;
-    height: 4em;
+    width: 4.2em;
+    height: 4.2em;
     background-color: #fff;
     position: absolute;
     border-radius: 50%;
-    top: 0.3em;
-    right: 13.1em;
+    top: .4em;
+    right: 13.4em;
     transition:  right 1s ease;
 }
 
-.day19__color1 .day19__circle{right: 13.1em;}
-.day19__color2 .day19__circle{right: 8em;}
-.day19__color3 .day19__circle{right: 2.9em;}
+.day19__color1 .day19__circle{right: 13.4em;}
+.day19__color2 .day19__circle{right: 7.9em;}
+.day19__color3 .day19__circle{right: 2.4em;}

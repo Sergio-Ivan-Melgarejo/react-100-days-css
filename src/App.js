@@ -1,6 +1,6 @@
 import "./normalize.css"
 import './App.css';
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, HashRouter } from "react-router-dom";
 
 import 'bootstrap';
 import Nav from "./components/Nav";
@@ -29,7 +29,7 @@ function App() {
   
   return (
     <main className="App container-fluid container-xl px-0 overflow-hidden">
-      <Router>
+      <HashRouter>
         <Nav />
         <div className="row align-items-center px-3 justify-content-center">
           <Routes>
@@ -44,7 +44,7 @@ function App() {
               <Route path="*" element={<ErrorPage/>} />
           </Routes>
         </div>
-      </Router>
+      </HashRouter>
     </main>
   );
 }
