@@ -168,5 +168,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/ExoLQNo",
         "title":"Hello",
         "text":"Yes, another animation of some text. But this time I used SVGs as a base. What kind of animation will you make?."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/OJzEPqr",
+        "title":"Loading Circle",
+        "text":"Is that a dark circle with a white stripe or the other way around?."
     }
 ]

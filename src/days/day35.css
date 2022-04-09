@@ -1,0 +1,31 @@
+.day35{
+    background-color: rgb(68, 201, 68);
+}
+
+.day35__container{
+    width: 12em;
+    animation: day35-rotate 6s linear infinite;
+}
+
+.day35__bg{
+    fill: none;
+    stroke: rgb(46, 153, 46);
+    stroke-width: .2em;
+}
+
+.day35__loader{
+    fill: none;
+    stroke: #fff;
+    stroke-width: .2em;
+    stroke-linecap: round;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 1200;
+    animation: day35-loader 6s linear infinite;
+}
+
+@keyframes day35-loader {
+    100%{stroke-dashoffset: 600;}
+}
+@keyframes day35-rotate {
+    100%{transform: rotate(360deg);}
+}
