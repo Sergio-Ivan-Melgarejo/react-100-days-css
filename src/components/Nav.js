@@ -15,7 +15,7 @@ const Nav = () => {
 
                     <NavLink className="button d-md-none" to="/abaout/">What is this?</NavLink>
 
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse pt-4 p-md-0" id="navbarSupportedContent">
                         
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item my-2 ms-4">

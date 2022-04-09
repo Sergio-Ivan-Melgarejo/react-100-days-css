@@ -121,10 +121,10 @@ const Card = ({jsonData}) => {
      />
   }
 
-  console.log(jsonData)
+  // console.log(jsonData)
 
   return (
-    <div className='container-project'>
+    <div className='container-project p-0 text-start'>
     {
       days()
     }

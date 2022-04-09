@@ -1,5 +1,6 @@
 .day14{
     background-color: #4B4841;
+    position: relative;
 }
 
 .day14__card{   
@@ -36,6 +37,7 @@
     width: 8em;
     height: 10em;
     bottom: 0;
+    left: 1em;
 }
 .day14__card:nth-child(1) img{animation: day14-bycicle 1s linear infinite;}
 .day14__card:nth-child(2) img{animation: day14-helicopter 1s linear infinite;}

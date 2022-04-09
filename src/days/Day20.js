@@ -9,7 +9,7 @@ const Day20 = () => {
             <div className='day20__container'></div>
             <svg className="day20__mail">
                 <polyline points="119,1 119,69 1,69 1,1" ></polyline>
-                <polyline points="119,1 60,45 1,1 119,1" ></polyline>
+                <polyline points="118,1 60,45 1,1 119,1" ></polyline>
             </svg>
             <svg className="day20__plane">
                 <polyline points="119,1 1,59 106,80 119,1"></polyline>

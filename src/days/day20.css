@@ -42,17 +42,15 @@
 
 .day20__mail,
 .day20__plane{
-    width: 8em;
-    height: 7em;
+    width: 125px;
+    height: 120px;
 
     fill: none;
     stroke: rgb(255, 255, 255);
-    stroke-width: .2em;
+    stroke-width: 1px;
     stroke-linecap: square;
     stroke-dasharray: 325 325;
     position: absolute;
-    top: 8.5em;
-    left: 9.5em;
     
     transition: all 1s ease-in-out;
 }

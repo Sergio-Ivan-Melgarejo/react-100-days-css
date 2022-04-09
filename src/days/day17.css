@@ -26,7 +26,31 @@
 }
 
 .day17__polygon{
-    width: 10em;
+    width: 165px;
+    height: 145px;
+}
+
+
+/* Para cambiar media en bootstrap*/
+@media screen and (max-width:576px) {  
+    .day17__polygon{
+        transform: scale(1);
+    }
+}
+@media screen and (min-width:576px) {  
+    .day17__polygon{
+        transform: scale(1.2);
+    }
+}
+@media screen and (min-width:768px) {  
+    .day17__polygon{
+        transform: scale(1.2);
+    }
+}
+@media screen and (min-width:1200px) {  
+    .day17__polygon{
+        transform: scale(1.5);
+    }
 }
 	
 .day17__light {

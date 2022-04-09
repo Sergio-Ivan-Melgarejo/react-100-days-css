@@ -1,3 +1,7 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
 .day19{
     background-color: #252252;
     position: relative;
@@ -23,33 +27,38 @@
 
 .day19__fieldset{
     position: relative;
-    padding: .3em 1em 0 0;
+    padding: 0;
+    display: flex;
+    gap: .5em;
+    width: 20em;
+    justify-content: center;
 }
 
 .day19__radio{
     visibility: hidden;
+    display: none;
 }
 
 .day19__label{
     display: inline-block;
-    width: 5em;
-    height: 5em;
+    width: 4.6em;
+    height: 4.6em;
     border-radius: 50%;
-    border: .3em solid #fff;
+    border: .2em solid #fff;
     cursor: pointer;
 }
 
 .day19__circle{
-    width: 3.5em;
-    height: 3.5em;
+    width: 4em;
+    height: 4em;
     background-color: #fff;
     position: absolute;
     border-radius: 50%;
-    top: 1.05em;
-    left: 1.55em;
-    transition: left 1s ease;
+    top: 0.3em;
+    right: 13.1em;
+    transition:  right 1s ease;
 }
 
-.day19__color1 .day19__circle{left: 1.55em;}
-.day19__color2 .day19__circle{left: 7.35em;}
-.day19__color3 .day19__circle{left: 13.15em;}
+.day19__color1 .day19__circle{right: 13.1em;}
+.day19__color2 .day19__circle{right: 8em;}
+.day19__color3 .day19__circle{right: 2.9em;}

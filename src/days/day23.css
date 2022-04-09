@@ -48,6 +48,7 @@
     transform: translate(0%,-100%);
     padding-left: .3em;
     animation: 4s ease forwards day23-span-1;
+    text-align: left;
 }
 
 @keyframes day23-span-1 {
@@ -215,12 +216,10 @@
 }
 
 .day23__line-1::after{
-    transform: translate(.15em);
     animation: 4s ease forwards day23-subline-1;
 }
 .day23__line-1::before{
     bottom: 0;
-    transform: translate(.15em);
     animation: 4s ease forwards day23-subline-2;
 }
 

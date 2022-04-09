@@ -6,7 +6,6 @@ const Day10 = () => {
     const [secondLine, setSecondLine] = useState(null)
     const [thirdLine, setThirdLine] = useState({})
     
-
     useEffect(() => {
         const stopInterval = setInterval(getDateTime, 1000);
 
@@ -53,7 +52,7 @@ const Day10 = () => {
             </svg>
             <div className='day10__container'>
                 <p className='day10__first-line'>{firstLine && firstLine}</p>
-                <h1 className='day10__second-line'>{secondLine ? secondLine : "Loading..."}</h1>
+                <h1 className={!secondLine ? "day10__second-line-big" :'day10__second-line'}>{secondLine ? secondLine : "Loading..."}</h1>
                 {
                     secondLine && (
                         <p className='day10__third-line'>

@@ -39,12 +39,12 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+    align-items: left;
 }
 
 .day27__li{
     display: grid;
     grid-template-columns: 1fr auto;
-    align-items: center;
 }
 
 .day27__input{
