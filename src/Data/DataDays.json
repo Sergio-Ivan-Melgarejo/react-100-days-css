@@ -173,5 +173,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/OJzEPqr",
         "title":"Loading Circle",
         "text":"Is that a dark circle with a white stripe or the other way around?."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/GRyGxQq",
+        "title":"Tabs",
+        "text":"The solution for layouts with little space or many navigation levels."
     }
 ]
