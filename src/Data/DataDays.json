@@ -178,5 +178,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/GRyGxQq",
         "title":"Tabs",
         "text":"The solution for layouts with little space or many navigation levels."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/bGajqzm",
+        "title":"Carousel",
+        "text":"Images, quotes, prices or logos. A carousel can be used in many ways and is an eye-catcher."
     }
 ]
