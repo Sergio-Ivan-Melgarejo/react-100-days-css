@@ -1,0 +1,27 @@
+.buttonDark{
+    position: fixed;
+    left: 1em;
+    bottom: 1em;
+    width: 3em;
+    height: 3em;
+    fill: var(--bg-color);
+    background-color: var(--primary-text-color-strong);
+    transition: fill .5s ease-out, border-color .5s ease-out;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid var(--bg-color);
+}
+
+.buttonDark:hover{
+    fill: var(--color);
+}
+
+.buttonDark svg{
+    display: block;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}

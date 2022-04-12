@@ -1,6 +1,6 @@
 import "./normalize.css"
 import './App.css';
-import { Route, BrowserRouter as Router, Routes, HashRouter } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 import 'bootstrap';
 import Nav from "./components/Nav";
@@ -10,10 +10,15 @@ import Join from "./pages/Join";
 import MyProgress from "./pages/MyProgress";
 import Card from "./components/Card";
 import ErrorPage from "./pages/ErrorPage";
+import { useEffect, useState } from "react";
+import ButtonDark from "./components/ButtonDark";
 
 const jsonData = require('./Data/DataDays.json'); 
 
+let getTheme= localStorage.getItem("theme") ? true : false;
+
 function App() {
+  const [theme, setTheme] = useState(getTheme)
 
   // useEffect(() => {
   //   fetch("./Data/DataDays.json")
@@ -26,6 +31,13 @@ function App() {
   //   // .then((response) => response.json())  
   //   // .then((dog) => console.log(dog))
   // }, [])
+
+  useEffect(() => {
+    theme ? 
+    document.getElementsByTagName("body")[0].classList.add("dark")
+    :
+    document.getElementsByTagName("body")[0].classList.remove("dark")
+  }, [theme])
   
   return (
     <main className="App container-fluid container-xl px-0 overflow-hidden">
@@ -45,6 +57,10 @@ function App() {
           </Routes>
         </div>
       </HashRouter>
+
+      {
+        <ButtonDark theme={theme} setTheme={setTheme} />
+      }
     </main>
   );
 }
