@@ -183,5 +183,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/bGajqzm",
         "title":"Carousel",
         "text":"Images, quotes, prices or logos. A carousel can be used in many ways and is an eye-catcher."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/zYpJYPj",
+        "title":"Logo Transition",
+        "text":"Logos don't always have to be static, as a transition or stylistic element they can have animations."
     }
 ]
