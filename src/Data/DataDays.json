@@ -188,5 +188,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/zYpJYPj",
         "title":"Logo Transition",
         "text":"Logos don't always have to be static, as a transition or stylistic element they can have animations."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/dyJqgeZ",
+        "title":"Menu Toggle",
+        "text":"What looks like another simple menu icon turns out to be a full-fledged navigation."
     }
 ]

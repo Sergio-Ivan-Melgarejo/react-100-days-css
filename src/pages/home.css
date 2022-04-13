@@ -63,6 +63,10 @@
     padding: .3em;
 }
 
+.home .container-project .button-change:nth-child(1) svg{transform: translate(-10%);}
+.home .container-project .button-change:nth-child(2) svg{transform: translate(10%);}
+
+
 .home .container-project .container-button .span{
     color: var(--second-text-color);
 }

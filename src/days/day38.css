@@ -1,8 +1,8 @@
 .day38{
-    --day38-bg-color-1: rgb(157, 57, 187);
-    --day38-bg-color-2: rgb(251, 247, 252);
-    --day38-color-1: rgb(251, 247, 252);
-    --day38-color-2: rgb(157, 57, 187);
+    --day38-bg-color-1: rgb(247, 252, 252);
+    --day38-bg-color-2: rgb(83, 187, 57);
+    --day38-color-1: rgb(83, 187, 57);
+    --day38-color-2: rgb(251, 247, 252);
     background-color: var(--day38-bg-color-2);
     position: relative;
 }
