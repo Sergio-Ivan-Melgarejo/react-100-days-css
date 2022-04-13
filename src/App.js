@@ -12,6 +12,7 @@ import Card from "./components/Card";
 import ErrorPage from "./pages/ErrorPage";
 import { useEffect, useState } from "react";
 import ButtonDark from "./components/ButtonDark";
+import Footer from "./components/Footer";
 
 const jsonData = require('./Data/DataDays.json'); 
 
@@ -33,7 +34,7 @@ function App() {
   // }, [])
 
   useEffect(() => {
-    theme ? 
+    theme ?
     document.getElementsByTagName("body")[0].classList.add("dark")
     :
     document.getElementsByTagName("body")[0].classList.remove("dark")
@@ -57,7 +58,7 @@ function App() {
           </Routes>
         </div>
       </HashRouter>
-
+      <Footer />
       {
         <ButtonDark theme={theme} setTheme={setTheme} />
       }

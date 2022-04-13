@@ -31,15 +31,16 @@ const About = () => {
                             <span className='num-line w-100'>8</span>
                             <span className='num-line w-100'>9</span>
                             <span className='num-line w-100'>10</span>
+                            <span className='num-line w-100'>11</span>
                         </div>
                         <p className="col code-right">
-                            <p className='line-right'><span className='code-color-1'>for</span> (<span className='code-color-1'>let</span> <span className='code-color-4'>day</span> <span className='code-color-2'>=</span> <span className='code-color-2'>1</span>; <span className='code-color-4'>day</span> <span className='code-color-2'>{"<="}</span> <span className='code-color-3'>100</span>; day<span className='code-color-2'>++</span>)</p>
+                            <p className='line-right'><span className='code-color-1'>for</span> (<span className='code-color-1'>let</span> <span className='code-color-4'>day</span> = <span className='code-color-3'>1</span>; <span className='code-color-4'>day</span> {"<="} <span className='code-color-3'>100</span>; <span className='code-color-4'>day</span>++)</p>
                             <p className='line-right'><span className='code-color-2'>getAnIdea</span>( )</p>
                             <p className='line-right'><span className='code-color-2'>writeHTML</span>( )</p>
                             <p className='line-right'><span className='code-color-2'>writeCSS</span>( )</p>
                             <p className='line-right'><span className='code-color-2'>beHappy</span>( )</p>
                             <br/>
-                            <p className='line-right'><span className='code-color-1'>if</span> (<span className='code-color-4'>day</span> <span className='code-color-2'>===</span> <span className='code-color-3'>100</span>)</p>
+                            <p className='line-right'><span className='code-color-1'>if</span> (<span className='code-color-4'>day</span> === <span className='code-color-3'>100</span>)</p>
                             <p className='line-right'><span className='code-color-2'>celebrate</span>()</p>
                             <p className='line-right'>{"}"}</p>
                             <p className='line-right'>{"}"}</p>

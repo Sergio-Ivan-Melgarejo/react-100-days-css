@@ -1,0 +1,82 @@
+.footer{
+    margin-top: 6.5em;
+}
+
+.heart{
+    fill: var(--color);
+    animation: heart 1.2s ease-out infinite;
+}
+
+@keyframes heart {
+    50%{transform: scale(.8);}
+}
+
+.footer .text{
+    margin: 0;
+}
+
+.a{
+    color: var(--color);
+    font-weight: bolder;
+}
+
+.a:hover{
+    color: var(--opacity-color);
+}
+
+.socia-media{
+    border: 1px solid var(--primary-text-color-strong);
+    position: relative;
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: transform .5s ease-out, border-color .5s ease-out;
+}
+
+.socia-media:hover{
+    transform: scale(1.1);
+    border-color: var(--color);
+}
+
+.socia-media__icon{
+    fill: var(--primary-text-color-strong);
+    width: 1.5em;
+    height: 1.5em;
+    transition: fill .5s ease-out;
+}
+
+.socia-media:hover > .socia-media__icon{
+    fill: var(--color);
+}
+
+.socia-media__title{
+    padding: .5em;
+    transition: color .5s ease-out;
+    color: var(--primary-text-color-strong);
+}
+
+@media screen and (min-width:768px) {  
+    .socia-media__icon{
+        width: 2em;
+        height: 2em;
+    }
+    .socia-media__title{
+        position: absolute;
+        left: 50%;
+        top: -2em;
+        transform: translate(-50%, -100%);
+        background-color: var(--bg-card-color);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility .5s ease-out, opacity .5s ease-out, top .5s ease-out;
+        color: var(--color);
+        pointer-events: none;
+        border-radius: 5px;
+    }
+    .socia-media:hover > .socia-media__title{
+        opacity: 1;
+        visibility: visible;
+        top: -1em;
+    } 
+}

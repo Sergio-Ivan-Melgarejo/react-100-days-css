@@ -7,7 +7,7 @@ const Nav = () => {
     const page = "home";
     return (
         <>
-            <nav className="col-12 navbar navbar-expand-md navbar-dark">
+            <nav className="col-12 navbar navbar-expand-md navbar-light">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span> 
