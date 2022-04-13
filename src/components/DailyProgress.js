@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import "./dailyProgress.css"
 
 const DailyProgress = ({jsonData}) => {
-  console.log(jsonData)
+  // console.log(jsonData)
   return (
     <section className="section-progres-days w-100 m-auto">
         <h2 className='title h2'>DailyProgress</h2>
