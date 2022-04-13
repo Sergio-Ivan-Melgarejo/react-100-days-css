@@ -86,10 +86,10 @@
 .day22__km{grid-area: km;}
 
 .day22__svg .day22__progress{
-    stroke-dashoffset: 365;
-    stroke-dasharray: 380;
+    stroke-dashoffset: 555;
+    stroke-dasharray: 550;
     stroke-linecap: round;
-    transform: rotate(-85deg);
+    transform: rotate(-90deg);
 	transform-origin: 50% 50%;
 }
 
@@ -107,11 +107,11 @@
 }
 
 @keyframes day22-1 {
-    100%{stroke-dashoffset:55;}
+    100%{stroke-dashoffset:250;}
 }
 @keyframes day22-2 {
-    100%{stroke-dashoffset:235;}
+    100%{stroke-dashoffset:275;}
 }
 @keyframes day22-3 {
-    100%{stroke-dashoffset:205;}
+    100%{stroke-dashoffset:355;}
 }

@@ -66,13 +66,23 @@
         left: 50%;
         top: -2em;
         transform: translate(-50%, -100%);
-        background-color: var(--bg-card-color);
+        background-color: var(--color);
         visibility: hidden;
         opacity: 0;
         transition: visibility .5s ease-out, opacity .5s ease-out, top .5s ease-out;
-        color: var(--color);
+        color: var(--bg-color);
         pointer-events: none;
         border-radius: 5px;
+    }
+    .socia-media__title::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%,50%) rotate(45deg);
+        width: .5em;
+        height: .5em;
+        background-color: var(--color);
     }
     .socia-media:hover > .socia-media__title{
         opacity: 1;
