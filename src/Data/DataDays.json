@@ -193,5 +193,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/dyJqgeZ",
         "title":"Menu Toggle",
         "text":"What looks like another simple menu icon turns out to be a full-fledged navigation."
+    },
+    {
+        "codepen":"",
+        "title":"Gallery",
+        "text":"Take a closer look by clicking on the images. The animations are CSS only and precalculated."
     }
 ]

@@ -8,9 +8,9 @@ const About = () => {
             <div className='izquierda col-12 col-sm-10 col-md-8 col-lg-6 m-auto'>
                 <h1 className='title fw-bolder'>100 DAYS CSS CHALLENGE</h1>
                 <h2 className='h1'>what is <span className='color'>this?</span></h2>
-                <p className='text'>For 100 consecutive days, I've written HTML and CSS snippets as a creative learning process for myself.</p>
-                <p className='text'>I used <a href='https://codepen.io/' className='color' target="_blank" rel='noreferrer'>CodePen</a> to write and save my code and published my results every day on this website.</p>
-                <p className='text'>After accomplishing my project on day 100, I've rewritten the website to let everyone else also join my challenge.</p>
+                <p className='text'>For 100 consecutive days, I will write HTML and CSS snippets as a creative learning process for myself.</p>
+                <p className='text'>I use <a href='https://codepen.io/' className='color' target="_blank" rel='noreferrer'>CodePen</a> to write and save my code and post my results every day on this website.</p>
+                <p className='text'>After completing my project on day 100... well, I'll continue in another challenge xD</p>
             </div>
             <div className='derecha col-12 col-lg-6'>
                 <div className='code-container my-5'>

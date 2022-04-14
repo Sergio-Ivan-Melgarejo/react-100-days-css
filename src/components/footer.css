@@ -3,6 +3,7 @@
 }
 
 .heart{
+    width: 3em;
     fill: var(--color);
     animation: heart 1.2s ease-out infinite;
 }
@@ -27,39 +28,61 @@
 .socia-media{
     border: 1px solid var(--primary-text-color-strong);
     position: relative;
-    padding: .5em;
+    padding: .25em;
     display: flex;
     align-items: center;
     border-radius: 5px;
-    transition: transform .5s ease-out, border-color .5s ease-out;
+    transition: border-color .5s ease-out, background-color .5s ease-out;
+    outline-color: var(--color);
 }
 
 .socia-media:hover{
-    transform: scale(1.1);
     border-color: var(--color);
+    background-color: var(--color);
 }
 
 .socia-media__icon{
-    fill: var(--primary-text-color-strong);
+    fill: var(--color);
     width: 1.5em;
     height: 1.5em;
     transition: fill .5s ease-out;
 }
 
 .socia-media:hover > .socia-media__icon{
-    fill: var(--color);
+    fill: var(--bg-color);
 }
 
 .socia-media__title{
     padding: .5em;
     transition: color .5s ease-out;
-    color: var(--primary-text-color-strong);
+    color: var(--color);
+    transition: color .5s ease-out;
 }
 
-@media screen and (min-width:768px) {  
+.socia-media:hover > .socia-media__title{
+    color: var(--bg-color);
+
+}
+
+@media screen and (min-width:768px) {    
+    .socia-media{
+        border-radius: 50%;
+        padding:0;
+        border: none;
+    }
+    .socia-media:hover{
+        background-color: var(--bg-color);
+    }
+
     .socia-media__icon{
-        width: 2em;
-        height: 2em;
+        width: 2.5em;
+        height: 2.5em;
+        margin: .1em;
+        padding: .5em;
+        border-radius: 50%;
+    }
+    .socia-media:hover > .socia-media__icon{
+        background-color: var(--color);
     }
     .socia-media__title{
         position: absolute;
