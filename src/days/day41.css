@@ -1,0 +1,103 @@
+.day41{
+    background-color: #383838;
+    --day41-color:#eb4c4c;
+    --day41-hover-color:#cf4141;
+    --day41-text-color:#5f5d5d;
+    --day41-bg-color:#fff;
+}
+
+.day41__modal{
+    background-color: var(--day41-bg-color);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 18em;
+    text-align: center;
+    word-spacing: .05em;
+    transform: scale(0);
+    animation: day41-appear .6s cubic-bezier(.8,1.53,.82,1.5) forwards;
+    box-shadow:.5em .5em 1em #00000040;
+}
+
+@keyframes day41-appear {
+    100%{transform: scale(1)}
+}
+
+.day41__modal.dismiss{
+    transform: scale(1);
+    animation: day41-disappear .6s cubic-bezier(.05,-0.28,.1,-0.5) forwards;
+}
+
+@keyframes day41-disappear {
+    100%{transform: scale(0)}
+}
+
+.day41__logo-container{
+    padding: 1em;
+    position: relative;
+    height: 4em;
+    width: 5em;
+    margin: auto;
+    animation: day41-zumbido 3s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes day41-zumbido {
+    35%{transform: rotate(0deg)}
+    38%{transform: rotate(-10deg);}
+    41%{transform: rotate(10deg);}
+    44%{transform: rotate(-10deg);}
+    47%{transform: rotate(10deg);}
+    50%{transform: rotate(-10deg);}
+    53%{transform: rotate(10deg);}
+    56%{transform: rotate(-10deg);}
+    59%{transform: rotate(10deg);}
+    62%{transform: rotate(-10deg);}
+    65%{transform: rotate(10deg);}
+    68%{transform: rotate(-10deg);}
+    72%{transform: rotate(10deg);}
+    75%{transform: rotate(0deg)}
+}
+
+.day41__clip{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: var(--day41-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    transform: translate(-50%,-50%);
+}
+
+.day41__logo{
+    color: var(--day41-bg-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2em;
+    transform: translate(-50%,-45%);
+}
+
+.day41__h1{
+    font-size: 1.5em;
+    color: var(--day41-text-color);
+}
+
+.day41__p{
+    font-size: 1em;
+    padding: 0 2.5em;
+    color: var(--day41-text-color);
+}
+
+.day41__button{
+    border: none;
+    width: 100%;
+    padding: .5em;
+    color: var(--day41-bg-color);
+    background-color: var(--day41-color);
+    transition: background-color .3s ease-out;
+}
+
+.day41__button:hover{
+    background-color: var(--day41-hover-color);
+}

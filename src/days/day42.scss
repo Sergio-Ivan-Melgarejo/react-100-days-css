@@ -1,0 +1,85 @@
+$numberOfStars: 100;
+$numberOfShootingStars: 5;
+
+.day42{
+
+    .day42__center{
+        width: 20em;
+        height: 20em;
+        border-radius: 50%;
+        background: #1d4253;
+        background: linear-gradient(65deg, #1d4253 20%, #6bb5c4 100%);
+        position: relative;
+        overflow: hidden;
+    
+        .day42__stars{
+            background-color: #fff;
+            border-radius: 50%;
+            width: .1em;
+            height: .1em;
+            position: absolute;
+        }
+
+        @for $i from 1 through $numberOfStars {
+            .day42__stars:nth-child(#{$i}) {
+                top: random(19) + em;
+                left: random(19) + em;
+                animation: ((random(20)+20)/10)+s day42-flickr (random(20)/-10)+s infinite;
+            }
+        }
+
+        .day42__shooting-star{
+            position: absolute;
+            top: 0;
+            left: -5em;
+            width: 5em;
+            height: .2em;
+            border-radius: 1em;
+            background: url(https://100dayscss.com/codepen/shooting-star.png) center center no-repeat;
+            background-size: 100% 100%;
+            transform: rotate(20deg);
+        }
+
+        @for $i from 1 through $numberOfShootingStars {
+            .day42__shooting-star-#{$i} {
+                top: (random(10)) + em;
+                animation: (random(5)+5)+s day42-shooting-star (random(100)/10)+s infinite;
+            }
+        }
+
+    }
+    .day42__ovni{
+        width: 2em;
+        height: 1.5em;
+        position: absolute;
+        top: 1em;
+        transform-origin: 1em 11.5em;
+        transform: rotate(0deg);
+        fill: #1d4253;
+        animation: day42-ovni 10s linear infinite;
+    }
+}
+
+@keyframes day42-flickr {
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.1;
+	}
+}
+
+@keyframes day42-shooting-star {
+	0% {
+		transform: translate3d(0,0,0) rotate(20deg);
+	}
+	100% {
+		transform: translate3d(451px,164px,0) rotate(20deg);
+	}
+}
+
+@keyframes day42-ovni {
+	100% {
+		transform: rotate(360deg);
+	}
+}

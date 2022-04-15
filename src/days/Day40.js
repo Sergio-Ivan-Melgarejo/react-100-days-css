@@ -4,7 +4,6 @@ import "./day40.css"
 const Day40 = () => {
     const handleClick = (e) =>{
         const item = e.target.classList.value;
-
         if(item.includes("day40__img")){
             e.target.classList.toggle("active");
         }

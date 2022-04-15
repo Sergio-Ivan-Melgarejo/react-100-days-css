@@ -32,8 +32,8 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
-    transition: border-color .5s ease-out, background-color .5s ease-out;
     outline-color: var(--color);
+    transition: border-color .5s ease-out, background-color .5s ease-out;
 }
 
 .socia-media:hover{
@@ -45,7 +45,7 @@
     fill: var(--color);
     width: 1.5em;
     height: 1.5em;
-    transition: fill .5s ease-out;
+    transition: fill .5s ease-out, background-color .5s ease-out, ;
 }
 
 .socia-media:hover > .socia-media__icon{
@@ -54,14 +54,12 @@
 
 .socia-media__title{
     padding: .5em;
-    transition: color .5s ease-out;
     color: var(--color);
     transition: color .5s ease-out;
 }
 
 .socia-media:hover > .socia-media__title{
     color: var(--bg-color);
-
 }
 
 @media screen and (min-width:768px) {    

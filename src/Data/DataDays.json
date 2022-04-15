@@ -195,8 +195,18 @@
         "text":"What looks like another simple menu icon turns out to be a full-fledged navigation."
     },
     {
-        "codepen":"",
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/mdpzXmB",
         "title":"Gallery",
         "text":"Take a closer look by clicking on the images. The animations are CSS only and precalculated."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/OJzaJVa",
+        "title":"Error Modal",
+        "text":"Don't worry, it's not a real error, this is part of the challenge."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/MWrzWNo",
+        "title":"Stars",
+        "text":"If you look closely, you can see the stars sparkling. And with a bit of luck, you might even spot a shooting star. Make a wish!"
     }
 ]

@@ -41,6 +41,8 @@ import Day37 from '../days/Day37'
 import Day38 from '../days/Day38'
 import Day39 from '../days/Day39'
 import Day40 from '../days/Day40'
+import Day41 from '../days/Day41'
+import Day42 from '../days/Day42'
 
 const Card = ({jsonData}) => {
   const params = useParams()
@@ -132,7 +134,11 @@ const Card = ({jsonData}) => {
         return <Day39 />
         case 40:
         return <Day40 />
-        default: return <Day40 />
+        case 41:
+        return <Day41 />
+        case 42:
+        return <Day42 />
+        default: return <Day42 />
       }
     }
     return <Day1

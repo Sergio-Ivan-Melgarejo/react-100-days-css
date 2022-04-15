@@ -34,12 +34,11 @@
 
 .day40__img.active{
     transform: scale(3.1);
-    z-index: 10;
 }
 
 @keyframes enter {
     0% {
-        transform: scale(0);
+        transform: scale(2);
         border-radius: 50%;
         opacity: 0;
     }
