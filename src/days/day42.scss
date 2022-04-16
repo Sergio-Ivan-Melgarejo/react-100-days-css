@@ -54,8 +54,8 @@ $numberOfShootingStars: 5;
         position: absolute;
         top: 1em;
         transform-origin: 1em 11.5em;
-        transform: rotate(0deg);
-        fill: #1d4253;
+        transform: rotate(-120deg);
+        fill: #041922;
         animation: day42-ovni 10s linear infinite;
     }
 }
@@ -79,7 +79,9 @@ $numberOfShootingStars: 5;
 }
 
 @keyframes day42-ovni {
+    50%{fill: #6bb5c4;}
 	100% {
-		transform: rotate(360deg);
+        
+		transform: rotate(240deg);
 	}
 }
