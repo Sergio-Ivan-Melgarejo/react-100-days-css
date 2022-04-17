@@ -1,0 +1,34 @@
+@mixin day-44-box ($width,$height,$delay) {
+    animation-delay: $delay + ms;
+    width: $width + em;
+    height: $height + em;
+}
+
+@keyframes day-44-rotate {
+    100%{
+        transform: rotate(-180deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+}
+
+.day44{
+    background-color: #191919;
+
+    .day44__box{
+        border: 1px solid #fff;
+        background-color: transparent;
+        position: absolute;
+    }
+    
+    
+    @for $i from 0 through 21 {
+        .day44__box:nth-child(#{$i}) {
+            @include day-44-box(#{$i},#{$i},($i * 50));
+            animation: day-44-rotate 4s ease-in-out ($i / 30) + s alternate infinite;
+        }
+    }
+        
+}
+
