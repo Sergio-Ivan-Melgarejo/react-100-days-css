@@ -1,0 +1,49 @@
+$color: #fff;
+$opacity-color: #ffffff30;
+$bg:rgb(90, 23, 90);
+
+.day45{
+    background-color: $bg;
+
+    .day45__button{
+        border: 1px solid $opacity-color;
+        background-color: $bg;
+        color: $color;
+        display: inline-block;
+        position: relative;
+        width: 6em;
+        height: 2em;
+        font-size: 2em;
+        text-transform: uppercase;
+        transition: background-color .8s ease-in-out, transform .8s ease-in-out;
+
+        &:hover{
+            background-color: #00000030;
+            transform: scale(1.01);
+        }
+
+        &:hover > .day45__svg .day45__line{
+            stroke-dashoffset: -480;
+        }
+
+        .day45__svg{
+            position: absolute;
+            left: -4px;
+            width: calc(100% + 8px);
+            top: -1px;
+            height: calc(100% + 2px);
+
+            .day45__line{
+                fill: none;
+		        stroke: $color;
+                stroke-width: 2px;
+                stroke-dasharray: 100 480;
+                stroke-dashoffset: 100;
+
+		        transition: all .8s ease-in-out;
+            }
+        }
+
+    }
+
+}
