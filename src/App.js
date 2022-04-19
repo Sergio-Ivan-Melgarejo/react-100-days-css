@@ -16,10 +16,10 @@ import Footer from "./components/Footer";
 import { LanguageProvider } from "./Context/LanguageContext";
 import ButtonLanguage from "./components/ButtonLanguage";
 
-let getTheme= localStorage.getItem("theme") ? true : false;
+let getTheme= localStorage.getItem("theme");
 
 function App() {
-  const [theme, setTheme] = useState(getTheme)
+  const [theme, setTheme] = useState(getTheme || "light")
 
   // useEffect(() => {
   //   fetch("./Data/DataDays.json")
@@ -34,7 +34,7 @@ function App() {
   // }, [])
 
   useEffect(() => {
-    theme ?
+    theme === "dark" ?
     document.getElementsByTagName("body")[0].classList.add("dark")
     :
     document.getElementsByTagName("body")[0].classList.remove("dark")
@@ -46,7 +46,6 @@ function App() {
         <HashRouter>
           <Nav />
           <div className="row align-items-center px-3 justify-content-center">
-        
               <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/days/:num" element={<Home />} />

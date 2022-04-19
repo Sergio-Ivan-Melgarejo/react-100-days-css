@@ -2,8 +2,19 @@ import React from 'react'
 import "./buttonDark.css"
 
 const ButtonDark = ({setTheme, theme}) => {
+  const handleClick = () => {
+    if(theme === "light"){
+      setTheme("dark")
+      localStorage.setItem("theme","dark")
+    }
+    if(theme === "dark"){
+      setTheme("light")
+      localStorage.setItem("theme","light")
+    }
+  }
+
   return (
-    <div onClick={()=>setTheme(!theme)} className='buttonDark'>
+    <div onClick={handleClick} className='buttonDark'>
      {
         theme ?
           <svg viewBox="0 0 512 512">

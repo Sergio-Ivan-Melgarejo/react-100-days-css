@@ -1,0 +1,54 @@
+.day46{
+    background-color: #241e22;
+
+    .day46__circle-container{
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        position: absolute;
+
+        .day46__cirle{
+            width: .1em;
+            height: .1em;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+        }
+    }
+}
+
+// update together with HTML
+@for $i from 1 through 6 {
+    .day46__circle-container:nth-child(#{$i}) {
+        animation: day-animation 10s ease-in-out infinite;
+        animation-delay: (100 * $i) + ms;
+    }	
+}
+
+@keyframes day-animation  {
+    10%{ transform: rotate(0deg) scale(1); opacity: .5; }
+    50%,70%{ transform: rotate(720deg) scale(15); }
+    90%,100%{ transform: rotate(0deg) scale(1); opacity: .5; }
+}
+
+// update together with HTML
+@for $i from 1 through 12 {
+	.day46__cirle:nth-child(#{$i}) {
+        top: 0;
+        transform-origin: .5em .5em;
+        transform: rotate((360 / 12) * $i + deg);
+        background-color: #fff !important;
+	}
+}
+
+@for $i from 1 through 6 {
+	@keyframes inOut-#{$i} {
+		$nullBase: $i - 1;
+		0% {
+			transform: scale(1 - ($nullBase / 7)) rotate( ($nullBase*5) + deg );
+		}
+		100% {
+			transform: scale(1 - ($nullBase / 22)) rotate( ( ($nullBase*10) + 360) + deg);
+		}
+	}
+}

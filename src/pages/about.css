@@ -13,7 +13,7 @@
     width: 25em;
     height: 20em;
     overflow: hidden;
-    background-color: #484849;
+    background-color: #1F1D36;
 }
 
 .about .code-container .top{
@@ -29,7 +29,7 @@
     display: block;
     width: 1em;
     height: 1em;
-    border: .2em solid var(--bg-color);
+    border: .2em solid var(--color);
     border-radius: 50%;
     animation: about-circle 3s ease-out infinite;
 }
@@ -84,7 +84,7 @@
 
 @keyframes about-circle {
     50%{
-        box-shadow: 0 0 1em var(--bg-color);
-        background-color: var(--bg-color);
+        box-shadow: 0 0 1em var(--color);
+        background-color: var(--color);
     }
 }

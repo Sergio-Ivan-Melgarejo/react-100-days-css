@@ -47,6 +47,7 @@ import Day43 from '../days/Day43'
 import Day44 from '../days/Day44'
 import Day45 from '../days/Day45'
 import LanguageContext from '../Context/LanguageContext'
+import Day46 from '../days/Day46'
 
 const Card = () => {
   const params = useParams()
@@ -150,7 +151,9 @@ const Card = () => {
         return <Day44 />
         case 45:
         return <Day45 />
-        default: return <Day45 />
+        case 46:
+        return <Day46 />
+        default: return <Day46 />
       }
     }
     return <Day1
@@ -160,7 +163,7 @@ const Card = () => {
   // console.log(jsonData)
 
   return (
-    <div className='container-project p-0 text-start'>
+    <div className='container-project p-0 pt-5 pt-md-0 text-start'>
     {
       days()
     }

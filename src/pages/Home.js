@@ -6,7 +6,7 @@ import Card from '../components/Card'
 
 const Home = () => {
   return (
-    <header className='row main-app home'>
+    <header className='row main-app home p-0'>
         <InfoCard />
         <Card />
     </header>
