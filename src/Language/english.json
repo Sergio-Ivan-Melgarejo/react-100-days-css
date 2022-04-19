@@ -1,0 +1,80 @@
+{
+    "component":{
+        "nav":{
+            "button-1":"The Challenge",
+            "button-2":"What is this?",
+            "button-3":"How can I join?",
+            "button-4":"Leaderboard",
+            "button-5":"Check My Progress"
+        },
+        "footer":{
+            "text-1":"Made with love by",
+            "text-2":"and thanks to",
+            "text-3":"for the inspiration",
+            "a-1":"Portfolio"
+        },
+        "challenge":{
+            "h3":"MY 100 DAYS CSS CHALLENGE"
+        }
+    },
+    "general":{
+        "h1": "100 DAYS CSS CHALLENGE"
+    },
+    "pages":{
+        "home":{
+            "box-1":{
+                "h2":"Day"
+            },
+            "box-2": "Switch Day"
+        },
+        "about":{
+            "box-1":{
+                "h2":"what is ",
+                "h2-span":"this?",
+                "text-1":"For 100 consecutive days, I will write HTML and CSS snippets as a creative learning process for myself.",
+                "part-1-of-text-2":"I use ",
+                "part-2-of-text-2":" to write and save my code and post my results every day on this website.",
+                "text-3":"After completing my project on day 100... well, I'll continue in another challenge xD"
+            },
+            "box-2":{
+                "variable":"day",
+                "function-1":"getAnIdea",
+                "function-2":"writeHTML",
+                "function-3":"writeCSS",
+                "function-4":"beHappy",
+                "function-5":"celebrate"
+            }
+        },
+        "join":{
+            "box-1":{
+                "h2":"How can I ",
+                "h2-span":"join?",
+                "part-1-of-text-1":"All you need to get started with the challenge is a",
+                "part-2-of-text-1":" account and a passion for programming (yes, I assumed that writing HTML & CSS is programming).",
+                "part-1-of-text-2":"The ",
+                "part-2-of-text-2":" shows every day a different challenge which you can complete. Use the provided ",
+                "part-3-of-text-2":", be creative and recreate the example in your own way.",
+                "text-3":"If you miss a day, you can simply change the day by clicking on the arrow icons below the example on the homepage and submit your result later.",
+                "part-1-of-text-4":"You can check your progress at any time ",
+                "part-2-of-text-4":" and if you are dedicated, you might even make it to the",
+                "a-1":"homepage",
+                "a-2":"here",
+                "a-3":"leaderboard"
+            }
+        },
+        "Leaderboard":{
+
+        },
+        "progress":{
+            "h2":"Progress of ",
+            "text":"The unvarnished truth. Check out the progress on the 100 Days CSS Challenge and see all the submitted Pens.",
+            "button":"CodePen Profile",
+            "h3":"DailyProgress",
+            "text-3":"After completing my project on day 100... well, I'll continue in another challenge xD"
+        },
+        "error":{
+            "text":"Page not found",
+            "button":"Back to Home"
+        }
+    }
+}

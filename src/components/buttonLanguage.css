@@ -1,0 +1,34 @@
+.buttonLanguage{
+    position: fixed;
+    left: 5em;
+    bottom: 1em;
+    width: 3em;
+    height: 3em;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--primary-text-color-strong);
+    transform: translate(0,300%);
+    opacity: 0; 
+    visibility:hidden;
+    animation:appear-buttonDark 1s ease-out forwards;
+}
+
+.buttonLanguage img{
+    display: block;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transition: opacity .5s ease-out;
+    opacity: .5;
+}
+
+.buttonLanguage:hover > img{
+    opacity: 1;
+}
+
+@keyframes appear-buttonLanguage {
+    100%{transform: translate(0); opacity: 1; visibility: visible;}
+}

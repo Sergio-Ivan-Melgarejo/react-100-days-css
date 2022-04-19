@@ -1,18 +1,40 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import LanguageContext from '../Context/LanguageContext'
+
 import { Link } from 'react-router-dom'
 
 import img from "../img/undraw_developer_activity_re_39tg.svg"
 
 const Join = () => {
+  const {pageData} = useContext(LanguageContext)
+
   return (
     <div className='join row text-sm-center text-lg-start my-5'>
       <section className='col-12 col-sm-10 col-md-8 col-lg-5 my-5 m-auto'>
-        <h1 className='title'>100 DAYS CSS CHALLENGE</h1>
-          <h2 className='h1'>How can I <span className='color'>join?</span></h2>
-          <p className='text'>All you need to get started with the challenge is a <a href='https://codepen.io/' className='color' target="_blank" rel='noreferrer'>CodePen</a> account and a passion for programming (yes, I assumed that writing HTML & CSS is programming).</p>
-          <p className='text'>The <Link to='/' className='color'>homepage</Link> shows every day a different challenge which you can complete. Use the provided <a href='https://codepen.io/pen?template=wMQKOq&editors=1100' className='color' target="_blank" rel="noreferrer" >template</a>, be creative and recreate the example in your own way.</p>
-          <p className='text'>If you miss a day, you can simply change the day by clicking on the arrow icons below the example on the homepage and submit your result later.</p>
-          <p className='text'>You can check your progress at any time <Link to="/progress/" className='color'>here</Link> and if you are dedicated, you might even make it to the <Link to="/leaderboard/" className='color'>leaderboard</Link>.</p>
+        <h1 className='title'>{pageData.general.h1}</h1>
+          <h2 className='h1'>
+            {pageData.pages.join["box-1"].h2} 
+            <span className='color'>{pageData.pages.join["box-1"]["h2-span"]}</span>
+          </h2>
+          <p className='text'>
+            {pageData.pages.join["box-1"]["part-1-of-text-1"]}
+            <a href='https://codepen.io/' className='color' target="_blank" rel='noreferrer'> CodePen</a> 
+            {pageData.pages.join["box-1"]["part-2-of-text-1"]}
+          </p>
+          <p className='text'>
+            {pageData.pages.join["box-1"]["part-1-of-text-2"]} 
+            <Link to='/' className='color'>{pageData.pages.join["box-1"]["a-1"]}</Link> 
+            {pageData.pages.join["box-1"]["part-2-of-text-2"]}
+            <a href='https://codepen.io/pen?template=wMQKOq&editors=1100' className='color' target="_blank" rel="noreferrer" >template</a>
+            {pageData.pages.join["box-1"]["part-3-of-text-2"]}
+          </p>
+          <p className='text'>{pageData.pages.join["box-1"]["text-3"]}</p>
+          <p className='text'>
+            {pageData.pages.join["box-1"]["part-1-of-text-4"]}
+            <Link to="/progress/" className='color'>{pageData.pages.join["box-1"]["a-2"]}</Link> 
+            {pageData.pages.join["box-1"]["part-2-of-text-4"]}
+            <Link to="/leaderboard/" className='color'> {pageData.pages.join["box-1"]["a-3"]}</Link>.
+            </p>
       </section>
       <section className='d-none d-lg-block m-auto col-5'>
         <img src={img} alt="developer" className="img-fluid" />

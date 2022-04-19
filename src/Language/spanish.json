@@ -1,0 +1,80 @@
+{
+    "component":{
+        "nav":{
+            "button-1":"El Reto",
+            "button-2":"¿Que es Esto?",
+            "button-3":"¿Cómo Puedo Unirme?",
+            "button-4":"Tabla de Clasificación",
+            "button-5":"Verificar mi Progreso"
+        },
+        "footer":{
+            "text-1":"Hecho con amor por",
+            "text-2":"y gracias a",
+            "text-3":"por la inspiración",
+            "a-1":"Portafolio"
+        },
+        "challenge":{
+            "h3":"Mi DESAFÍO DE 100 DÍAS DE CSS"
+        }
+    },
+    "general":{
+        "h1": "DESAFÍO CSS DE 100 DÍAS"
+    },
+    "pages":{
+        "home":{
+            "box-1":{
+                "h2":"day"
+            },
+            "box-2": "Cambiar día"
+        },
+        "about":{
+            "box-1":{
+                "h2":"Que es ",
+                "h2-span":"esto?",
+                "text-1":"Durante 100 días consecutivos, escribiré fragmentos de HTML y CSS como un proceso de aprendizaje creativo para mí.",
+                "part-1-of-text-2":"Use ",
+                "part-2-of-text-2":" para escribir y guardar mi código y publicar mis resultados todos los días en este sitio web.",
+                "text-3":"Después de completar mi proyecto el día 100... bueno, continuaré en otro reto xD"
+            },
+            "box-2":{
+                "variable":"dia",
+                "function-1":"tenerUnaIdea",
+                "function-2":"escribirHTML",
+                "function-3":"escribirCSS",
+                "function-4":"serFeliz",
+                "function-5":"celebra"
+            }
+        },
+        "join":{
+            "box-1":{
+                "h2":"Cómo puedo ",
+                "h2-span":"unirme?",
+                "part-1-of-text-1":"Todo lo que necesitas para empezar con el desafío es un",
+                "part-2-of-text-1":" cuenta y una pasión por la programación (sí, asumí que escribir HTML y CSS es programación).",
+                "part-1-of-text-2":"La ",
+                "part-2-of-text-2":" muestra cada día un desafío diferente que puedes completar. Utilice el proporcionado ",
+                "part-1-of-text-3":", sé creativo y recrea el ejemplo a tu manera.",
+                "text-3":"Si pierde un día, simplemente puede cambiar el día haciendo clic en los iconos de flecha debajo del ejemplo en la página de inicio y enviar su resultado más tarde.",
+                "part-1-of-text-4":"Puedes consultar tu progreso en cualquier momento ",
+                "part-2-of-text-4":" y si eres dedicado, incluso podrías llegar al",   
+                "a-1":"pagina de inicio",
+                "a-2":"aqui",
+                "a-3":"clasificación"
+            }
+        },
+        "Leaderboard":{
+
+        },
+        "progress":{
+            "h2":"Progreso de ",
+            "text":"La verdad sin adornos. Consulte el progreso del Desafío de 100 días de CSS y vea todos los codePen enviados.",
+            "button":"Perfil de CodePen",
+            "h3":"ProgresoDiario",
+            "text-3":"Después de completar mi proyecto el día 100... bueno, continuaré en otro reto xD"
+        },
+        "error":{
+            "text":"Página no encontrada",
+            "button":"Volver al Inicio"
+        }
+    }
+}
