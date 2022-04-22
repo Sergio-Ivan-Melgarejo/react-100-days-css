@@ -225,8 +225,13 @@
         "text":"Si los efectos de desplazamiento normales ya no son suficientes para ti, prueba esto."
     },
     {
-        "codepen":"",
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/YzYBEqN",
         "title":"Círculos de iris",
         "text":"¿Qué ves? ¿Obturador de cámara, tornado, flores o gente bailando desde arriba?"
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/zYpXPzX",
+        "title":"Arte de pixel",
+        "text":"¿No te gusta el dinosaurio de Google? No hay problema, haz clic en los píxeles para crear tu propia obra de arte."
     }
 ]

@@ -225,8 +225,13 @@
         "text":"If normal hover effects aren't enough for you anymore, try this."
     },
     {
-        "codepen":"",
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/YzYBEqN",
         "title":"Iris Circles",
         "text":"What do you see? Camera shutter, tornado, flower or dancing people from above?"
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/zYpXPzX",
+        "title":"Pixel Art",
+        "text":"Don't you like the Google Dinosaur? No problem, click on the pixels to create your own piece of art."
     }
 ]

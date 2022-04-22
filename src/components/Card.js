@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import LanguageContext from '../Context/LanguageContext'
 
 import Day1 from "../days/Day1"
 import Day2 from "../days/Day2"
@@ -46,8 +47,8 @@ import Day42 from '../days/Day42'
 import Day43 from '../days/Day43'
 import Day44 from '../days/Day44'
 import Day45 from '../days/Day45'
-import LanguageContext from '../Context/LanguageContext'
 import Day46 from '../days/Day46'
+import Day47 from '../days/Day47'
 
 const Card = () => {
   const params = useParams()
@@ -153,15 +154,15 @@ const Card = () => {
         return <Day45 />
         case 46:
         return <Day46 />
-        default: return <Day46 />
+        case 47:
+        return <Day47 />
+        default: return <Day47 />
       }
     }
     return <Day1
      />
   }
-
-  // console.log(jsonData)
-
+  
   return (
     <div className='container-project p-0 pt-5 pt-md-0 text-start'>
     {

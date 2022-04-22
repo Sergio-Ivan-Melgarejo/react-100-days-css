@@ -1,0 +1,16 @@
+.day47{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    gap: 1px;
+
+    .day47__pixel{
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .day47__pixel.click{
+        background-color: #acacac;
+    }
+}

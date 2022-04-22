@@ -18,12 +18,12 @@
         }
     },
     "general":{
-        "h1": "DESAFÍO CSS DE 100 DÍAS"
+        "h1": "DESAFÍO DE 100 DE CSS DÍAS"
     },
     "pages":{
         "home":{
             "box-1":{
-                "h2":"day"
+                "h2":"Day"
             },
             "box-2": "Cambiar día"
         },

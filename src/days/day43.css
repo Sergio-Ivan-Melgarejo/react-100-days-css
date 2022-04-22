@@ -6,6 +6,7 @@
     --day43-span: #b1b1b1;
 
     background: var(--day43-bg);
+    position: relative;
 }
 
 .day43__container{

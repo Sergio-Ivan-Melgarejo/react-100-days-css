@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Join from "./pages/Join";
 import MyProgress from "./pages/MyProgress";
-import Card from "./components/Card";
 import ErrorPage from "./pages/ErrorPage";
 import { useEffect, useState } from "react";
 import ButtonDark from "./components/ButtonDark";
