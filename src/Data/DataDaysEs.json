@@ -233,5 +233,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/zYpXPzX",
         "title":"Arte de pixel",
         "text":"¿No te gusta el dinosaurio de Google? No hay problema, haz clic en los píxeles para crear tu propia obra de arte."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/KKQwOdV",
+        "title":"Cubo 3D",
+        "text":"Con CSS puedes trabajar no solo en dos dimensiones sino también en tres dimensiones. Los objetos simples y la animación no son un problema."
     }
 ]
