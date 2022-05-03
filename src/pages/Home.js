@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <header className='row main-app home p-0'>
         <InfoCard />
-        <Card />
+        <Card/>
     </header>
   )
 }

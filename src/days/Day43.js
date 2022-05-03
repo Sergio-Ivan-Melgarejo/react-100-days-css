@@ -7,7 +7,6 @@ const Day43 = () => {
     const handleClick = () => {
         setClick(!click)
     }
-    
     return (
         <div className={click ? 'days day43 click' : 'days day43'}>
             <div className='day43__container'>

@@ -13,7 +13,7 @@
     width: 25em;
     height: 20em;
     overflow: hidden;
-    background-color: #1F1D36;
+    background-color: rgb(65, 65, 65);
 }
 
 .about .code-container .top{

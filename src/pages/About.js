@@ -37,7 +37,7 @@ const About = () => {
                                 <span className='num-line w-100'>10</span>
                                 <span className='num-line w-100'>11</span>
                             </div>
-                            <p className="col code-right">
+                            <div className="col code-right">
                                 <p className='line-right'><span className='code-color-1'>for</span> (<span className='code-color-1'>let</span> <span className='code-color-4'>{pageData.pages.about["box-2"]["variable"]}</span> = <span className='code-color-3'>1</span>; <span className='code-color-4'>{pageData.pages.about["box-2"]["variable"]}</span> {"<="} <span className='code-color-3'>100</span>; <span className='code-color-4'>{pageData.pages.about["box-2"]["variable"]}</span>++)</p>
                                 <p className='line-right'><span className='code-color-2'>{pageData.pages.about["box-2"]["function-1"]}</span>( )</p>
                                 <p className='line-right'><span className='code-color-2'>{pageData.pages.about["box-2"]["function-2"]}</span>( )</p>
@@ -48,7 +48,7 @@ const About = () => {
                                 <p className='line-right'><span className='code-color-2'>{pageData.pages.about["box-2"]["function-5"]}</span>()</p>
                                 <p className='line-right'>{"}"}</p>
                                 <p className='line-right'>{"}"}</p>
-                            </p>
+                            </div>
                         </div>
                     </div>    
                 </div>
