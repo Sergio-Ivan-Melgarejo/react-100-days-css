@@ -1,0 +1,73 @@
+$rows: 20;
+$columns: 20;
+$triggerSide: 1.25;
+
+$bg: rgb(36, 45, 95);
+$color: rgb(176, 218, 24);
+
+
+.day49{
+    background-color: $bg;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+
+    .day49__box {
+        height: 100%;
+        border: 1px solid #00000025;
+    }
+
+    .day49__bell {
+        position: absolute;
+        top: -.625em;
+        left: -.625em;
+        width: 1.25em;
+        height: 1.25em;
+        background: $color;
+        border-radius: 50%;
+        transform: translate(12.5em,12.5em);
+        transition: all .3s ease-out;
+        pointer-events: none;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 1.75em;
+            height: 1.75em;
+            border: .15em solid $color;
+            border-radius: 50%;
+            top: -.25em;
+            left: -.25em;
+            animation: day49-bell 1s ease-out infinite;
+        } 
+    }
+}
+
+@keyframes day49-bell {
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    
+    }
+}
+
+$row: 1;
+$column: 1;
+@for $i from 1 through ($rows * $columns) {
+	
+	// update row
+	@if ($row * $columns) < $i {
+		$row: $row + 1;
+	}
+
+	// update column
+	$column: $i - ( ($row - 1) * $columns );
+	
+	$top: ( ($row * $triggerSide) - ($triggerSide / 2) ) + em;
+	$left: ( ($column * $triggerSide) - ($triggerSide / 2) ) + em;
+	
+	.day49__box:nth-child(#{$i}):hover ~ .day49__bell {
+		transform: translate3d($left,$top,0);
+	}
+}

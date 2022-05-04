@@ -238,5 +238,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/KKQwOdV",
         "title":"Cubo 3D",
         "text":"Con CSS puedes trabajar no solo en dos dimensiones sino también en tres dimensiones. Los objetos simples y la animación no son un problema."
+    },
+    {
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/poaJppE",
+        "title":"Seguimiento con CSS",
+        "text":"No sería un gran desafío implementar eso solo con JS, pero con CSS tienes que encontrar una buena solución."
     }
 ]
