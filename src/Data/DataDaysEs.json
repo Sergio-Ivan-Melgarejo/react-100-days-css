@@ -243,5 +243,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/poaJppE",
         "title":"Seguimiento con CSS",
         "text":"No sería un gran desafío implementar eso solo con JS, pero con CSS tienes que encontrar una buena solución."
+    },
+    {
+        "codepen":"",
+        "title":"Huevo de Pascua",
+        "text":"¿Estás más familiarizado con los 12 principios básicos de la animación? Este es un ejemplo para aplastar y estirar."
     }
 ]

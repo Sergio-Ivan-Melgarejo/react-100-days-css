@@ -243,5 +243,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/poaJppE",
         "title":"CSS Follow",
         "text":"It wouldn't be a big challenge to implement that with JS only, but with CSS you have to come up with a good solution."
+    },
+    {
+        "codepen":"",
+        "title":"Easter Egg",
+        "text":"Are you familier with the 12 Basic Principles of Animation? This is an example for squash and stretch."
     }
 ]

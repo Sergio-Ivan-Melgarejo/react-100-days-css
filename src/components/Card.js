@@ -1,7 +1,13 @@
-import React, { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+
+//Context
 import LanguageContext from '../Context/LanguageContext'
 
+// Components
+import Loader from './Loader'
+
+// Days
 import Day1 from "../days/Day1"
 import Day2 from "../days/Day2"
 import Day3 from '../days/Day3'
@@ -51,6 +57,7 @@ import Day46 from '../days/Day46'
 import Day47 from '../days/Day47'
 import Day48 from '../days/Day48'
 import Day49 from '../days/Day49'
+import Day50 from '../days/Day50'
 
 const Card = () => {  
   // Select Day
@@ -163,21 +170,29 @@ const Card = () => {
         return <Day48 />
         case 49:
         return <Day49 />
-        default: return <Day49 />
+        case 50:
+        return <Day50 />
+        default: return <Day50 />
       }
     }
     return <Day1
      />
   }
 
+  const [reset, setReset] = useState(false);
   const hancleResicle = () => {
-    alert("en proceso")
+    setReset(true)
+    setTimeout(()=>{
+      setReset(false)
+    },500)
   }
 
   return (
     <div className='container-project p-0 pt-5 pt-md-0 text-start'>
     {
-      days()
+      reset
+      ?   <Loader />
+      :   days()
     }
     <div className='card__footer'>
       <div className="container-button">
