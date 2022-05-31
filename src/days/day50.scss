@@ -1,0 +1,37 @@
+.day50{
+    background: rgb(50, 75, 221);
+
+    .day50__circle{
+        background-color: #fff;
+        width: 7em;
+        height: 9em;
+        border-radius: 3.5em 3.5em 3.5em 3.5em / 5.5em 5.5em 3.5em 3.5em;
+        transform: translateY(-20em);
+        box-shadow: .5em .5em 1em #00000020;
+        animation: day50 4s linear infinite;
+    }
+}
+
+@keyframes day50 {
+    10%{transform: translateY(-20em);}
+    26%{transform: translateY(0);}
+    27%{transform: translateY(0) scaleY(.8) scaleX(1.2);}
+    31%{transform: translateY(-5em) scaleY(1.1) scaleX(.9);}
+    36%{transform: translateY(0)}
+    41%{transform: rotate(-5deg)}
+    46%{transform: rotate(5deg)}
+    51%{transform: rotate(-5deg)}
+    56%{transform: rotate(5deg)}
+    61%{transform: rotate(-5deg)}
+    66%{transform: rotate(5deg)}
+    71%{transform: rotate(-5deg)}
+    74%{transform: rotate(0)}
+    
+    75%{transform: translateY(0)}
+    79%{transform: translateY(-5em) scaleY(.8) scaleX(1.2)}
+    83%{transform: translateY(0) scaleY(1.1) scaleX(.9)}
+    
+    84%{transform: translateY(0);}
+    90%{transform: translateY(20em)}
+    100%{transform: translateY(20em)}
+}

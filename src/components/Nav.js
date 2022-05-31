@@ -36,9 +36,9 @@ const Nav = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item my-2 ms-4">
-                                <NavLink className={({isActive})=>(isActive ? "nav_link active" : "nav_link")} to="/leaderboard/">
+                                <a href="https://100dayscss.com/" className="nav_link" target="_blank" rel='noreferrer' >
                                     {pageData.component.nav["button-4"]}
-                                </NavLink>
+                                </a>
                             </li>
                         </ul>
 

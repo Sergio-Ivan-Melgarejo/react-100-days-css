@@ -11,6 +11,7 @@ $color: rgb(176, 218, 24);
     display: grid;
     grid-template-columns: repeat(20,1fr);
     grid-template-rows: repeat(20,1fr);
+    position: relative;
 
     .day49__box {
         height: 100%;
