@@ -11,7 +11,7 @@
     },
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/eYeaVYX",
-        "title":"La Piramide",
+        "title":"La Pirámide",
         "text":"No es tan desafiante como las verdaderas pirámides de Egipto, pero el camino de las sombras no es fácil."
     },
     {
@@ -62,7 +62,7 @@
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/GRyZrKX",
         "title":"Galería de usuarios",
-        "text":"An idea for a transition between user overview and profile page."
+        "text":"Una idea para una transición entre la descripción general del usuario y la página de perfil."
     },
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/JjMXVwQ",
@@ -116,7 +116,7 @@
     },
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/eYyRxVz",
-        "title":"Boton",
+        "title":"Botón",
         "text":"¿Realmente quieres que tus usuarios adivinen si sus acciones fueron exitosas? ¡No! Así que dales algunos comentarios si hacen clic en un botón."
     },
     {
@@ -147,7 +147,7 @@
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/GRyyMJZ",
         "title":"línea aleatoria",
-        "text":"Qué puedo decir, es una línea. Una línea que se mueve y rodea algo. ¿Que debería ser? Eso es para que usted decida."
+        "text":"Qué puedo decir, es una línea. Una línea que se mueve y rodea algo. ¿Qué debería ser? Eso es para que usted decida."
     },
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/ExoQZmV",
@@ -162,11 +162,11 @@
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/RwxyVdw",
         "title":"Día soleado",
-        "text":"¿Qué más podría ser visible en este día soleado? ¿Algunos pájaros, llanuras o incluso superman?."
+        "text":"¿Qué más podría ser visible en este día soleado? ¿Algunos pájaros, llanuras o incluso Superman?."
     },
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/ExoLQNo",
-        "title":"Holla",
+        "title":"Hello",
         "text":"Sí, otra animación de algún texto. Pero esta vez usé SVG como base. ¿Qué tipo de animación harás?."
     },
     {
@@ -197,7 +197,7 @@
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/mdpzXmB",
         "title":"Galería",
-        "text":"Eche un vistazo más de cerca haciendo clic en las imágenes. Las animaciones son solo CSS y están precalculadas."
+        "text":"Eche un vistazo más de cerca haciendo clic en las imágenes. Las animaciones son solo CSS y están pre calculadas."
     },
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/OJzaJVa",
@@ -221,7 +221,7 @@
     },
     {
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/PoEXEJo",
-        "title":"Boton",
+        "title":"Botón",
         "text":"Si los efectos de desplazamiento normales ya no son suficientes para ti, prueba esto."
     },
     {
@@ -245,7 +245,7 @@
         "text":"No sería un gran desafío implementar eso solo con JS, pero con CSS tienes que encontrar una buena solución."
     },
     {
-        "codepen":"",
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/gOveZzP",
         "title":"Huevo de Pascua",
         "text":"¿Estás más familiarizado con los 12 principios básicos de la animación? Este es un ejemplo para aplastar y estirar."
     }

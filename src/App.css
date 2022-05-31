@@ -2,6 +2,9 @@
   background-color: var(--bg-color);
   min-height: 100vh;
   padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 .App .row{

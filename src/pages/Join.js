@@ -33,7 +33,7 @@ const Join = () => {
             {pageData.pages.join["box-1"]["part-1-of-text-4"]}
             <Link to="/progress/" className='color'>{pageData.pages.join["box-1"]["a-2"]}</Link> 
             {pageData.pages.join["box-1"]["part-2-of-text-4"]}
-            <Link to="/leaderboard/" className='color'> {pageData.pages.join["box-1"]["a-3"]}</Link>.
+            <a  href="https://100dayscss.com/" target="_blank" rel="noreferrer" className='color'> {pageData.pages.join["box-1"]["a-3"]}</a>.
             </p>
       </section>
       <section className='d-none d-lg-block m-auto col-5'>
