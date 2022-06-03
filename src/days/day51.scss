@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400");
+
+$day51-card: rgb(230, 230, 230);
+$day51-font-color: #781aaf;
+
+.day51{
+    flex-direction: column;
+    gap: 1em;
+
+    .day51__input{display: none;}
+    label{
+        cursor: pointer;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        bottom: 8em;
+        left: 50%;;
+        padding: .5em;
+    }
+
+    .day51__pause{
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        transition: transform .3s ease-in-out;
+        transform: scale(1);
+
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            width: .6em;
+            height: 2em;
+            background-color: $day51-font-color;
+            right: 0;
+            bottom: 0;
+        }
+        &::after{
+            left: 0;
+        }
+    }
+
+    .day51__play{
+        position: relative;
+        width: 2.1em;
+        height: 2.1em;
+        border-style: solid;
+        border-width: 1em 0 1em 2em;
+        border-color: transparent transparent transparent $day51-font-color;
+        transition: transform .3s ease-in-out;
+        transform: scale(0);
+    }
+
+    input:checked ~ label{
+        .day51__pause{transform: scale(0);}
+        .day51__play{transform: scale(1);}
+    }
+    
+    input:checked ~ .day51__count-card{
+        .day51__milliers, .day51__centaines, .day51__dizaines, .day51__unites{
+            animation-play-state: paused;
+        }
+    }
+
+    .day51__count-card{
+        width: 12em;
+        height: 4em;
+        border-radius: 5px;
+        background-color: $day51-card;
+        color: $day51-font-color;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+        padding: .5em;
+        font-weight: bolder;
+    }
+
+    .day51__numbers{
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        font-size: 2em;
+    }
+
+    .day51__unites{
+        animation: increment 10s ease-in-out infinite;
+    }
+
+    .day51__dizaines{
+        animation: increment-dizaines 100s ease-in-out infinite;
+    }
+
+    .day51__centaines{
+        animation: increment-centaines 1000s ease-in-out infinite;
+    }
+
+    .day51__milliers{
+        animation: increment-milliers 10000s ease-in-out infinite;
+    }
+
+    @keyframes increment {
+        0%{transform: translateY(0);}
+        @for $i from 1 through 10{
+            #{$i}0%{transform: translateY((-2 * $i)+em);}
+        }
+    }
+    @keyframes increment-dizaines {
+        0%,9%{transform: translateY(0);}
+        100%{transform: translateY(-20em);}
+        @for $i from 1 through 9{
+            #{$i}0%,#{$i}9%{transform: translateY((-2 * $i)+em);}
+        }
+    }
+    @keyframes increment-centaines {
+        0%,9.9%{transform: translateY(0);}
+        100%{transform: translateY(-20em);}
+        @for $i from 1 through 9{
+            #{$i}0%,#{$i}9.9%{transform: translateY((-2 * $i)+em);}
+        }
+    }
+    @keyframes increment-milliers {
+        0%,9.99%{transform: translateY(0);}
+        100%{transform: translateY(-20em);}
+        @for $i from 1 through 9{
+            #{$i}0%,#{$i}9.99%{transform: translateY((-2 * $i)+em);}
+        }
+    }
+}

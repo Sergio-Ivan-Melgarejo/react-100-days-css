@@ -248,5 +248,10 @@
         "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/gOveZzP",
         "title":"Easter Egg",
         "text":"Are you familier with the 12 Basic Principles of Animation? This is an example for squash and stretch."
+    },
+    {
+        "codepen":"",
+        "title":"CSS Counter",
+        "text":"You think with CSS you can't count to a thousand and even pause the whole thing at the push of a button? Then take a look at the code."
     }
 ]
