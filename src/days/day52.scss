@@ -1,0 +1,70 @@
+.day52{
+    background-color: rgb(75, 202, 75);
+
+    .day52__circle{
+        border-radius: 50%;
+        position: absolute;
+
+        .day52__dot{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: .5em;
+            height: .5em;
+            transform-origin: .5em .5em;
+
+            .day52__fill{
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                border-radius: 50%;
+                transform: scale(0);
+            }
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .day52__circle:nth-child(#{$i}){
+            width: (4 + $i) + em;
+            height: (4 + $i) + em;
+            animation-delay: ($i / 2) + s;
+            
+            .day52__dot{ 
+                transform-origin: (2 + (0.5 * $i)) + em (2 + (0.5 * $i)) + em;
+               
+                .day52__fill{
+                    animation-delay: ($i / 2) + s;
+                }
+            }    
+
+            $dotsPerRing: (12 + ($i * 6));
+            @for $j from 0 through $dotsPerRing {
+                .day52__dot:nth-child(#{$j}){
+                    transform: rotate(((360 / $dotsPerRing) * $j) + deg);
+                }
+            }
+        }
+    }    
+}
+
+
+.day52__circle {
+    animation: day52-circle 5s infinite linear;
+}
+
+@keyframes day52-circle {
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+.day52__fill {
+    animation: day52-pulse 5s infinite linear;
+}
+
+@keyframes day52-pulse {
+    50%{
+        transform: scale(1);
+    }
+}

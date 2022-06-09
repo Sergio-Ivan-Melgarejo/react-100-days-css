@@ -59,6 +59,7 @@ import Day48 from '../days/Day48'
 import Day49 from '../days/Day49'
 import Day50 from '../days/Day50'
 import Day51 from '../days/Day51'
+import Day52 from '../days/Day52'
 
 const Card = () => {  
   // Select Day
@@ -175,7 +176,9 @@ const Card = () => {
         return <Day50 />
         case 51:
         return <Day51 />
-        default: return <Day51 />
+        case 52:
+        return <Day52 />
+        default: return <Day52 />
       }
     }
     return <Day1

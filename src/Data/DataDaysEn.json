@@ -250,8 +250,13 @@
         "text":"Are you familier with the 12 Basic Principles of Animation? This is an example for squash and stretch."
     },
     {
-        "codepen":"",
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/MWQXLwO",
         "title":"CSS Counter",
         "text":"You think with CSS you can't count to a thousand and even pause the whole thing at the push of a button? Then take a look at the code."
+    },
+    {
+        "codepen":"",
+        "title":"Dot Wave",
+        "text":"I feel like I go into hypnosis if I stare at it too long."
     }
 ]

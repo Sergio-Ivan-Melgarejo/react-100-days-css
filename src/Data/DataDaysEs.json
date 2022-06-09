@@ -250,8 +250,13 @@
         "text":"¿Estás más familiarizado con los 12 principios básicos de la animación? Este es un ejemplo para aplastar y estirar."
     },
     {
-        "codepen":"",
+        "codepen":"https://codepen.io/sergio-ivan-melgarejo/pen/MWQXLwO",
         "title":"Contador de CSS",
         "text":"Crees que con CSS no puedes contar hasta mil e incluso pausar todo con solo presionar un botón? Entonces eche un vistazo al código."
+    },
+    {
+        "codepen":"",
+        "title":"Ola de Puntos",
+        "text":"Siento que entro en hipnosis si lo miro demasiado tiempo."
     }
 ]
